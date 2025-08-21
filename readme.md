@@ -1,6 +1,8 @@
 IntelliJ Git Workflow – Daily Assignment Submission
+✅ With this guide, students have a GitHub-styled, step-by-step IntelliJ workflow for daily assignment submission.
 
-Repository: ford-aug-2025-assignments.git
+
+Repository: https://github.com/sreenath20/ford-aug-2025-assignments.git
 Tool: IntelliJ IDEA
 
 🛠️ 1. Clone Repository (One-time Setup)
@@ -129,4 +131,3 @@ Push	Ctrl + Shift + K	Git → Push…
 Pull	Ctrl + T	Git → Pull…
 Branch	(no shortcut)	Git menu (bottom-right)
 
-✅ With this guide, students have a GitHub-styled, step-by-step IntelliJ workflow for daily assignment submission.
