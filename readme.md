@@ -57,7 +57,7 @@ Class name → AssignmentN.java
 
 Package must match folder, e.g.:
 
-package sreenath.day01_core_java;
+package  <your-name>.day01_core_java;
 
 ✍️ 4. Adding Your Assignment (Daily)
 
@@ -65,7 +65,7 @@ Right-click your folder → New → Java Class → name it AssignmentN
 
 Write your code (example for Day 01):
 
-package sreenath.day01_core_java;
+package  <your-name>.day01_core_java;
 
 public class Assignment1 {
     public static void main(String[] args) {
