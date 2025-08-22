@@ -1,6 +1,6 @@
 # 📘 Student Assignment Tracker  
 
-**Student Name:** <Your Full Name>  
+**Student Name:** Raamji Anbazhagan 
 **Batch:** Ford – August 2025  
 
 ---
