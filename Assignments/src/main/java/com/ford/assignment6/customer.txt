@@ -1,0 +1,3 @@
+Lokesh,100
+Karan,120
+Kavya,270
