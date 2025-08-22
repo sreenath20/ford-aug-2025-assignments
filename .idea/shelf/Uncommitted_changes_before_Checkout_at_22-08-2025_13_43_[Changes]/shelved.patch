@@ -1,0 +1,156 @@
+Index: .idea/copilotDiffState.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CopilotDiffPersistence\">\r\n    <option name=\"pendingDiffs\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$/.gitignore\">\r\n          <value>\r\n            <PendingDiffInfo>\r\n              <option name=\"filePath\" value=\"$PROJECT_DIR$/.gitignore\" />\r\n              <option name=\"updatedContent\" value=\"# Compiled class files&#10;*.class&#10;&#10;# Log files&#10;*.log&#10;&#10;# BlueJ files&#10;*.ctxt&#10;&#10;# Mobile Tools for Java (J2ME)&#10;.mtj.tmp/&#10;&#10;# Package Files&#10;*.jar&#10;*.war&#10;*.nar&#10;*.ear&#10;*.zip&#10;*.tar.gz&#10;*.rar&#10;&#10;# Virtual machine crash logs&#10;hs_err_pid*&#10;&#10;# IDE files&#10;.idea/&#10;*.iml&#10;*.iws&#10;&#10;# Gradle files&#10;.gradle/&#10;build/&#10;gradle-app.setting&#10;!gradle-wrapper.jar&#10;!gradle-wrapper.properties&#10;&#10;# OS generated files&#10;.DS_Store&#10;.DS_Store?&#10;._*&#10;.Spotlight-V100&#10;.Trashes&#10;ehthumbs.db&#10;Thumbs.db\" />\r\n            </PendingDiffInfo>\r\n          </value>\r\n        </entry>\r\n        <entry key=\"$PROJECT_DIR$/src/main/java/com/abstraction/Employee.java\">\r\n          <value>\r\n            <PendingDiffInfo>\r\n              <option name=\"filePath\" value=\"$PROJECT_DIR$/src/main/java/com/abstraction/Employee.java\" />\r\n              <option name=\"originalContent\" value=\"&#10;/**&#10; * Employee class demonstrating different access modifiers&#10; * - private: salary (most restrictive, only accessible within this class)&#10; * - default: employeeId (accessible within same package)&#10; * - protected: department (accessible within same package and subclasses)&#10; * - public: name and methods (accessible from anywhere)&#10; */&#10;public class Employee {&#10;    // Private member - only accessible within Employee class&#10;    private double salary;&#10;    &#10;    // Default (package-private) member - accessible within same package&#10;    int employeeId;&#10;    &#10;    // Protected member - accessible within same package and subclasses&#10;    protected String department;&#10;    &#10;    // Public members - accessible from anywhere&#10;    public String name;&#10;    &#10;    // Constructor&#10;    public Employee(String name, int employeeId, String department, double salary) {&#10;        this.name = name;&#10;        this.employeeId = employeeId;&#10;        this.department = department;&#10;        this.salary = salary;&#10;    }&#10;    &#10;    // Public method to access private salary - only way to get salary from outside&#10;    public double getSalary() {&#10;        return salary;&#10;    }&#10;    &#10;    // Public method to update salary&#10;    public void setSalary(double salary) {&#10;        this.salary = salary;&#10;    }&#10;    &#10;    // Public method for general information&#10;    public String getEmployeeInfo() {&#10;        return &quot;Employee: &quot; + name + &quot;, ID: &quot; + employeeId + &quot;, Department: &quot; + department;&#10;    }&#10;    &#10;    // Protected method - accessible to subclasses and same package&#10;    protected void generateDepartmentReport() {&#10;        System.out.println(&quot;Generating report for department: &quot; + department);&#10;    }&#10;    &#10;    // Default method - accessible within same package only&#10;    void updateEmployeeRecord() {&#10;        System.out.println(&quot;Updating record for employee ID: &quot; + employeeId);&#10;    }&#10;}\" />\r\n              <option name=\"updatedContent\" value=\"package com.abstraction;&#10;&#10;/**&#10; * Employee class demonstrating different access modifiers&#10; * - private: salary (most restrictive, only accessible within this class)&#10; * - default: employeeId (accessible within same package)&#10; * - protected: department (accessible within same package and subclasses)&#10; * - public: name and methods (accessible from anywhere)&#10; */&#10;public class Employee {&#10;    // Private member - only accessible within Employee class&#10;    private double salary;&#10;    &#10;    // Default (package-private) member - accessible within same package&#10;    int employeeId;&#10;    &#10;    // Protected member - accessible within same package and subclasses&#10;    protected String department;&#10;    &#10;    // Public members - accessible from anywhere&#10;    public String name;&#10;    &#10;    // Constructor&#10;    public Employee(String name, int employeeId, String department, double salary) {&#10;        this.name = name;&#10;        this.employeeId = employeeId;&#10;        this.department = department;&#10;        this.salary = salary;&#10;    }&#10;    &#10;    // Public method to access private salary - only way to get salary from outside&#10;    public double getSalary() {&#10;        return salary;&#10;    }&#10;    &#10;    // Public method to update salary&#10;    public void setSalary(double salary) {&#10;        this.salary = salary;&#10;    }&#10;    &#10;    // Public method for general information&#10;    public String getEmployeeInfo() {&#10;        return &quot;Employee: &quot; + name + &quot;, ID: &quot; + employeeId + &quot;, Department: &quot; + department;&#10;    }&#10;    &#10;    // Protected method - accessible to subclasses and same package&#10;    protected void generateDepartmentReport() {&#10;        System.out.println(&quot;Generating report for department: &quot; + department);&#10;    }&#10;    &#10;    // Default method - accessible within same package only&#10;    void updateEmployeeRecord() {&#10;        System.out.println(&quot;Updating record for employee ID: &quot; + employeeId);&#10;    }&#10;}\" />\r\n            </PendingDiffInfo>\r\n          </value>\r\n        </entry>\r\n        <entry key=\"$PROJECT_DIR$/src/main/java/com/abstraction/HRPortal.java\">\r\n          <value>\r\n            <PendingDiffInfo>\r\n              <option name=\"filePath\" value=\"$PROJECT_DIR$/src/main/java/com/abstraction/HRPortal.java\" />\r\n            </PendingDiffInfo>\r\n          </value>\r\n        </entry>\r\n        <entry key=\"$PROJECT_DIR$/src/main/java/com/assignment6/assignment1/package1/AccessModifierDemo.java\">\r\n          <value>\r\n            <PendingDiffInfo>\r\n              <option name=\"filePath\" value=\"$PROJECT_DIR$/src/main/java/com/assignment6/assignment1/package1/AccessModifierDemo.java\" />\r\n              <option name=\"updatedContent\" value=\"package com.assignment6.assignment1.package1;&#10;}\" />\r\n            </PendingDiffInfo>\r\n          </value>\r\n        </entry>\r\n        <entry key=\"$PROJECT_DIR$/src/main/java/com/customexception/assignment1/ATM.java\">\r\n          <value>\r\n            <PendingDiffInfo>\r\n              <option name=\"filePath\" value=\"$PROJECT_DIR$/src/main/java/com/customexception/assignment1/ATM.java\" />\r\n              <option name=\"originalContent\" value=\"package com.customexception.assignment1;&#10;package com.customexception.assignment1;&#10;&#10;public class ATM {&#10;}&#10;\" />\r\n              <option name=\"updatedContent\" value=\"package com.customexception.assignment1;&#10;&#10;public class ATM {&#10;    private static final String VALID_PIN = &quot;1234&quot;;&#10;    &#10;    public void validatePin(String enteredPin) throws InvalidPinException {&#10;        if (enteredPin.length() != 4) {&#10;            throw new InvalidPinException(&quot;PIN must be exactly 4 digits.&quot;);&#10;        }&#10;        &#10;        if (!enteredPin.equals(VALID_PIN)) {&#10;            throw new InvalidPinException(&quot;Incorrect PIN.&quot;);&#10;        }&#10;    }&#10;}\" />\r\n            </PendingDiffInfo>\r\n          </value>\r\n        </entry>\r\n        <entry key=\"$PROJECT_DIR$/src/main/java/com/customexception/assignment1/Driver.java\">\r\n          <value>\r\n            <PendingDiffInfo>\r\n              <option name=\"filePath\" value=\"$PROJECT_DIR$/src/main/java/com/customexception/assignment1/Driver.java\" />\r\n              <option name=\"originalContent\" value=\"&#10;&#10;import java.util.Scanner;&#10;&#10;public class Driver {&#10;    public static void main(String[] args) {&#10;        Scanner scanner = new Scanner(System.in);&#10;        ATM atm = new ATM();&#10;        &#10;        System.out.print(&quot;Enter PIN: &quot;);&#10;        String enteredPin = scanner.nextLine();&#10;        &#10;        try {&#10;            atm.validatePin(enteredPin);&#10;            System.out.println(&quot;Access Granted. Welcome!&quot;);&#10;        } catch (InvalidPinException e) {&#10;            System.out.println(&quot;Error: &quot; + e.getMessage());&#10;        }&#10;        &#10;        scanner.close();&#10;    }&#10;}\" />\r\n              <option name=\"updatedContent\" value=\"package com.customexception.assignment1;&#10;&#10;import java.util.Scanner;&#10;&#10;public class Driver {&#10;    public static void main(String[] args) {&#10;        Scanner scanner = new Scanner(System.in);&#10;        ATM atm = new ATM();&#10;        &#10;        System.out.print(&quot;Enter PIN: &quot;);&#10;        String enteredPin = scanner.nextLine();&#10;        &#10;        try {&#10;            atm.validatePin(enteredPin);&#10;            System.out.println(&quot;Access Granted. Welcome!&quot;);&#10;        } catch (InvalidPinException e) {&#10;            System.out.println(&quot;Error: &quot; + e.getMessage());&#10;        }&#10;        &#10;        scanner.close();&#10;    }&#10;}\" />\r\n            </PendingDiffInfo>\r\n          </value>\r\n        </entry>\r\n        <entry key=\"$PROJECT_DIR$/src/main/java/com/customexception/assignment1/InvalidPinException.java\">\r\n          <value>\r\n            <PendingDiffInfo>\r\n              <option name=\"filePath\" value=\"$PROJECT_DIR$/src/main/java/com/customexception/assignment1/InvalidPinException.java\" />\r\n              <option name=\"originalContent\" value=\"package com.customexception.assignment1;&#10;&#10;public class InvalidPinException extends Exception {&#10;    public InvalidPinException(String message) {&#10;        super(message);&#10;    }&#10;}\" />\r\n              <option name=\"updatedContent\" value=\"package com.customexception.assignment1;&#10;&#10;public class InvalidPinException extends Exception {&#10;    public InvalidPinException(String message) {&#10;        super(message);&#10;    }&#10;}\" />\r\n            </PendingDiffInfo>\r\n          </value>\r\n        </entry>\r\n        <entry key=\"$PROJECT_DIR$/src/main/java/com/management/Manager.java\">\r\n          <value>\r\n            <PendingDiffInfo>\r\n              <option name=\"filePath\" value=\"$PROJECT_DIR$/src/main/java/com/management/Manager.java\" />\r\n              <option name=\"updatedContent\" value=\"package com.management;&#10;}\" />\r\n            </PendingDiffInfo>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/copilotDiffState.xml b/.idea/copilotDiffState.xml
+--- a/.idea/copilotDiffState.xml	(revision 158a3fb49cad87aa4b39d6fe1a7f57a2b8f9cc95)
++++ b/.idea/copilotDiffState.xml	(date 1755749881389)
+@@ -3,14 +3,6 @@
+   <component name="CopilotDiffPersistence">
+     <option name="pendingDiffs">
+       <map>
+-        <entry key="$PROJECT_DIR$/.gitignore">
+-          <value>
+-            <PendingDiffInfo>
+-              <option name="filePath" value="$PROJECT_DIR$/.gitignore" />
+-              <option name="updatedContent" value="# Compiled class files&#10;*.class&#10;&#10;# Log files&#10;*.log&#10;&#10;# BlueJ files&#10;*.ctxt&#10;&#10;# Mobile Tools for Java (J2ME)&#10;.mtj.tmp/&#10;&#10;# Package Files&#10;*.jar&#10;*.war&#10;*.nar&#10;*.ear&#10;*.zip&#10;*.tar.gz&#10;*.rar&#10;&#10;# Virtual machine crash logs&#10;hs_err_pid*&#10;&#10;# IDE files&#10;.idea/&#10;*.iml&#10;*.iws&#10;&#10;# Gradle files&#10;.gradle/&#10;build/&#10;gradle-app.setting&#10;!gradle-wrapper.jar&#10;!gradle-wrapper.properties&#10;&#10;# OS generated files&#10;.DS_Store&#10;.DS_Store?&#10;._*&#10;.Spotlight-V100&#10;.Trashes&#10;ehthumbs.db&#10;Thumbs.db" />
+-            </PendingDiffInfo>
+-          </value>
+-        </entry>
+         <entry key="$PROJECT_DIR$/src/main/java/com/abstraction/Employee.java">
+           <value>
+             <PendingDiffInfo>
+@@ -32,33 +24,6 @@
+             <PendingDiffInfo>
+               <option name="filePath" value="$PROJECT_DIR$/src/main/java/com/assignment6/assignment1/package1/AccessModifierDemo.java" />
+               <option name="updatedContent" value="package com.assignment6.assignment1.package1;&#10;}" />
+-            </PendingDiffInfo>
+-          </value>
+-        </entry>
+-        <entry key="$PROJECT_DIR$/src/main/java/com/customexception/assignment1/ATM.java">
+-          <value>
+-            <PendingDiffInfo>
+-              <option name="filePath" value="$PROJECT_DIR$/src/main/java/com/customexception/assignment1/ATM.java" />
+-              <option name="originalContent" value="package com.customexception.assignment1;&#10;package com.customexception.assignment1;&#10;&#10;public class ATM {&#10;}&#10;" />
+-              <option name="updatedContent" value="package com.customexception.assignment1;&#10;&#10;public class ATM {&#10;    private static final String VALID_PIN = &quot;1234&quot;;&#10;    &#10;    public void validatePin(String enteredPin) throws InvalidPinException {&#10;        if (enteredPin.length() != 4) {&#10;            throw new InvalidPinException(&quot;PIN must be exactly 4 digits.&quot;);&#10;        }&#10;        &#10;        if (!enteredPin.equals(VALID_PIN)) {&#10;            throw new InvalidPinException(&quot;Incorrect PIN.&quot;);&#10;        }&#10;    }&#10;}" />
+-            </PendingDiffInfo>
+-          </value>
+-        </entry>
+-        <entry key="$PROJECT_DIR$/src/main/java/com/customexception/assignment1/Driver.java">
+-          <value>
+-            <PendingDiffInfo>
+-              <option name="filePath" value="$PROJECT_DIR$/src/main/java/com/customexception/assignment1/Driver.java" />
+-              <option name="originalContent" value="&#10;&#10;import java.util.Scanner;&#10;&#10;public class Driver {&#10;    public static void main(String[] args) {&#10;        Scanner scanner = new Scanner(System.in);&#10;        ATM atm = new ATM();&#10;        &#10;        System.out.print(&quot;Enter PIN: &quot;);&#10;        String enteredPin = scanner.nextLine();&#10;        &#10;        try {&#10;            atm.validatePin(enteredPin);&#10;            System.out.println(&quot;Access Granted. Welcome!&quot;);&#10;        } catch (InvalidPinException e) {&#10;            System.out.println(&quot;Error: &quot; + e.getMessage());&#10;        }&#10;        &#10;        scanner.close();&#10;    }&#10;}" />
+-              <option name="updatedContent" value="package com.customexception.assignment1;&#10;&#10;import java.util.Scanner;&#10;&#10;public class Driver {&#10;    public static void main(String[] args) {&#10;        Scanner scanner = new Scanner(System.in);&#10;        ATM atm = new ATM();&#10;        &#10;        System.out.print(&quot;Enter PIN: &quot;);&#10;        String enteredPin = scanner.nextLine();&#10;        &#10;        try {&#10;            atm.validatePin(enteredPin);&#10;            System.out.println(&quot;Access Granted. Welcome!&quot;);&#10;        } catch (InvalidPinException e) {&#10;            System.out.println(&quot;Error: &quot; + e.getMessage());&#10;        }&#10;        &#10;        scanner.close();&#10;    }&#10;}" />
+-            </PendingDiffInfo>
+-          </value>
+-        </entry>
+-        <entry key="$PROJECT_DIR$/src/main/java/com/customexception/assignment1/InvalidPinException.java">
+-          <value>
+-            <PendingDiffInfo>
+-              <option name="filePath" value="$PROJECT_DIR$/src/main/java/com/customexception/assignment1/InvalidPinException.java" />
+-              <option name="originalContent" value="package com.customexception.assignment1;&#10;&#10;public class InvalidPinException extends Exception {&#10;    public InvalidPinException(String message) {&#10;        super(message);&#10;    }&#10;}" />
+-              <option name="updatedContent" value="package com.customexception.assignment1;&#10;&#10;public class InvalidPinException extends Exception {&#10;    public InvalidPinException(String message) {&#10;        super(message);&#10;    }&#10;}" />
+             </PendingDiffInfo>
+           </value>
+         </entry>
+Index: src/main/java/com/customexception/assignment1/InvalidPinException.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.customexception.assignment1;\r\n\r\npublic class InvalidPinException extends Exception {\r\n    public InvalidPinException(String message) {\r\n        super(message);\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/com/customexception/assignment1/InvalidPinException.java b/src/main/java/com/customexception/assignment1/InvalidPinException.java
+--- a/src/main/java/com/customexception/assignment1/InvalidPinException.java	(revision 158a3fb49cad87aa4b39d6fe1a7f57a2b8f9cc95)
++++ b/src/main/java/com/customexception/assignment1/InvalidPinException.java	(date 1755489448551)
+@@ -4,4 +4,4 @@
+     public InvalidPinException(String message) {
+         super(message);
+     }
+-}
++}
+\ No newline at end of file
+Index: src/main/java/com/customexception/assignment1/Driver.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.customexception.assignment1;\r\n\r\nimport java.util.Scanner;\r\n\r\npublic class Driver {\r\n    public static void main(String[] args) {\r\n        Scanner scanner = new Scanner(System.in);\r\n        ATM atm = new ATM();\r\n\r\n        System.out.print(\"Enter PIN: \");\r\n        String enteredPin = scanner.nextLine();\r\n\r\n        try {\r\n            atm.validatePin(enteredPin);\r\n            System.out.println(\"Access Granted. Welcome!\");\r\n        } catch (InvalidPinException e) {\r\n            System.out.println(\"Error: \" + e.getMessage());\r\n        }\r\n\r\n        scanner.close();\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/com/customexception/assignment1/Driver.java b/src/main/java/com/customexception/assignment1/Driver.java
+--- a/src/main/java/com/customexception/assignment1/Driver.java	(revision 158a3fb49cad87aa4b39d6fe1a7f57a2b8f9cc95)
++++ b/src/main/java/com/customexception/assignment1/Driver.java	(date 1755489448566)
+@@ -6,17 +6,17 @@
+     public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+         ATM atm = new ATM();
+-
++        
+         System.out.print("Enter PIN: ");
+         String enteredPin = scanner.nextLine();
+-
++        
+         try {
+             atm.validatePin(enteredPin);
+             System.out.println("Access Granted. Welcome!");
+         } catch (InvalidPinException e) {
+             System.out.println("Error: " + e.getMessage());
+         }
+-
++        
+         scanner.close();
+     }
+-}
++}
+\ No newline at end of file
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Compiled class files\r\n*.class\r\n\r\n# Log files\r\n*.log\r\n\r\n# BlueJ files\r\n*.ctxt\r\n\r\n# Mobile Tools for Java (J2ME)\r\n.mtj.tmp/\r\n\r\n# Package Files\r\n*.jar\r\n*.war\r\n*.nar\r\n*.ear\r\n*.zip\r\n*.tar.gz\r\n*.rar\r\n\r\n# Virtual machine crash logs\r\nhs_err_pid*\r\n\r\n# IDE files\r\n.idea/\r\n*.iml\r\n*.iws\r\n\r\n# Gradle files\r\n.gradle/\r\nbuild/\r\ngradle-app.setting\r\n!gradle-wrapper.jar\r\n!gradle-wrapper.properties\r\n\r\n# OS generated files\r\n.DS_Store\r\n.DS_Store?\r\n._*\r\n.Spotlight-V100\r\n.Trashes\r\nehthumbs.db\r\nThumbs.db\r\n
+===================================================================
+diff --git a/.gitignore b/.gitignore
+--- a/.gitignore	(revision 158a3fb49cad87aa4b39d6fe1a7f57a2b8f9cc95)
++++ b/.gitignore	(date 1755700918193)
+@@ -1,44 +1,1 @@
+-# Compiled class files
+-*.class
+-
+-# Log files
+-*.log
+-
+-# BlueJ files
+-*.ctxt
+-
+-# Mobile Tools for Java (J2ME)
+-.mtj.tmp/
+ 
+-# Package Files
+-*.jar
+-*.war
+-*.nar
+-*.ear
+-*.zip
+-*.tar.gz
+-*.rar
+-
+-# Virtual machine crash logs
+-hs_err_pid*
+-
+-# IDE files
+-.idea/
+-*.iml
+-*.iws
+-
+-# Gradle files
+-.gradle/
+-build/
+-gradle-app.setting
+-!gradle-wrapper.jar
+-!gradle-wrapper.properties
+-
+-# OS generated files
+-.DS_Store
+-.DS_Store?
+-._*
+-.Spotlight-V100
+-.Trashes
+-ehthumbs.db
+-Thumbs.db
