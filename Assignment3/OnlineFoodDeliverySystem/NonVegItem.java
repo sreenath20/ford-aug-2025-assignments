@@ -1,0 +1,19 @@
+package Assignment3.OnlineFoodDeliverySystem;
+
+public class NonVegItem extends MenuItem {
+    private int calories;
+    private String spiceLevel;
+
+    public NonVegItem(String name, double price, String type, int calories, String spiceLevel) {
+        super(name, price, type);
+        this.calories = calories;
+        this.spiceLevel = spiceLevel;
+    }
+
+    @Override
+    public void displayItem() {
+        super.displayItem();
+        System.out.println("Calories: " + calories);
+        System.out.println("Spice Level: " + spiceLevel);
+    }
+}
