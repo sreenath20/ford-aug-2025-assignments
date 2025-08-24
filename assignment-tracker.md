@@ -1,6 +1,6 @@
 # 📘 Student Assignment Tracker  
 
-**Student Name:** <Your Full Name>  
+**Student Name:** Venkata Naga Durga Sowmya Kollipara 
 **Batch:** Ford – August 2025  
 
 ---
