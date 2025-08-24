@@ -1,19 +1,19 @@
 # 📘 Student Assignment Tracker  
 
-**Student Name:** <Your Full Name>  
+**Student Name:** Suhas Munagala  
 **Batch:** Ford – August 2025  
 
 ---
 
 ## 📅 Assignment Tracker  
 
-| Day   | Topic                | Assignment Title                        | Status       | Commit Message Example                                |
-|-------|----------------------|-----------------------------------------|--------------|------------------------------------------------------|
-| Day 01 | Core Java Basics     | Assignment1 – Data Types & Loops        | ⏳ Pending    | Added Assignment1 - Java Basics (Day 01)             |
-| Day 02 | OOP Concepts         | Assignment2 – Classes & Objects         | ⏳ Pending    | Implemented OOP concepts - Assignment2               |
-| Day 03 | Collections          | Assignment3 – CRUD with ArrayList       | ⏳ Pending    | Completed CRUD using ArrayList - Assignment3         |
-| Day 04 | Exception Handling   | Assignment4 – Custom Exceptions         | ⏳ Pending    | Added Assignment4 - Custom Exception Handling        |
-| Day 05 | Streams & Lambdas    | Assignment5 – Employee Stream API       | ⏳ Pending    | Added Assignment5 - Stream API example               |
+| Day   | Topic                | Assignment Title                        | Status    | Commit Message Example                                |
+|-------|----------------------|-----------------------------------------|-----------|------------------------------------------------------|
+| Day 01 | Core Java Basics     | Assignment1 – Data Types & Loops        | Completed | Added Assignment1 - Java Basics (Day 01)             |
+| Day 02 | OOP Concepts         | Assignment2 – Classes & Objects         | Completed | Implemented OOP concepts - Assignment2               |
+| Day 03 | Collections          | Assignment3 – CRUD with ArrayList       | ⏳ Pending | Completed CRUD using ArrayList - Assignment3         |
+| Day 04 | Exception Handling   | Assignment4 – Custom Exceptions         | ⏳ Pending | Added Assignment4 - Custom Exception Handling        |
+| Day 05 | Streams & Lambdas    | Assignment5 – Employee Stream API       | ⏳ Pending | Added Assignment5 - Stream API example               |
 
 ---
 
