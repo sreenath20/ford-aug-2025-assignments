@@ -1,4 +1,4 @@
-package Day1;
+package assignment1;
 
 public class SensorDataNormalization {
     public static void main(String[] args) {
