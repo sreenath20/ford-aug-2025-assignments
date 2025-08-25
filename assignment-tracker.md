@@ -9,11 +9,11 @@
 
 | Day   | Topic                | Assignment Title                        | Status       | Commit Message Example                                |
 |-------|----------------------|-----------------------------------------|--------------|------------------------------------------------------|
-| Day 01 | Core Java Basics     | Assignment1 – Data Types & Loops        | ⏳ Pending    | Added Assignment1 - Java Basics (Day 01)             |
-| Day 02 | OOP Concepts         | Assignment2 – Classes & Objects         | ⏳ Pending    | Implemented OOP concepts - Assignment2               |
-| Day 03 | Collections          | Assignment3 – CRUD with ArrayList       | ⏳ Pending    | Completed CRUD using ArrayList - Assignment3         |
-| Day 04 | Exception Handling   | Assignment4 – Custom Exceptions         | ⏳ Pending    | Added Assignment4 - Custom Exception Handling        |
-| Day 05 | Streams & Lambdas    | Assignment5 – Employee Stream API       | ⏳ Pending    | Added Assignment5 - Stream API example               |
+| Day 01 | Core Java Basics     | Assignment1 – Primitives,Wrappers,Operators       | ✅ Completed    | Implemented in [Assignment1.java](Assignments/Assignment1.java) and called in [Driver.java](Assignments/Driver.java)              |
+| Day 02 | Core Java Basics         | Assignment2 – Conditions,Loops         | ✅ Completed    | Implemented in [Assignment2Part2.java](Assignments/Assignment1.java) and called in [Driver.java](Assignments/Driver.java)       |
+| Day 03 | OOPs concepts          | Assignment3 – Encapsulation,Inheritance       | ✅ Completed | Implemented in [Assignments/assignment3](./Assignments/assignment3/) folder and called in [assignment3/Driver.java](Assignments/assignment3/Driver.java)         |
+| Day 04 | OOPs concepts    | Assignment4 – Abstract classes,Interfaces  | ✅ Completed    | Implemented in [Assignments/assignment4](./Assignments/assignment4/) folder and called in [assignment4/Driver.java](Assignments/assignment4/Driver.java)     |
+| Day 05 | OOPs concepts    | Assignment5 – Polymorphism   | ✅ Completed   | Implemented in [Assignments/assignment5](./Assignments/assignment5/) folder and called in [assignment5/Driver.java](Assignments/assignment5/Driver.java)               |
 
 ---
 
