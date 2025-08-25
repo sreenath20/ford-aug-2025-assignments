@@ -1,6 +1,7 @@
 # 📘 Student Assignment Tracker  
 
-**Student Name:** <Your Full Name>  
+**Student Name:** RENUGADEVI C S (rcs3@ford.com) 
+
 **Batch:** Ford – August 2025  
 
 ---
