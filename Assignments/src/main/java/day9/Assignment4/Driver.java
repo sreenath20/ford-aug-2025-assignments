@@ -42,7 +42,7 @@ public class Driver {
         findSlotByVehicle(slotMap, "AB03UV9876");
         System.out.println();
 
-        // Search: Find all SUVs or Bikes
+        // Search: Find all Sedans or Bikes
         System.out.println("-----All Vehicles of Type Sedan or Bike:-----");
         for (Vehicle v : vehicleSet) {
             if (v.getType().equalsIgnoreCase("Sedan") || v.getType().equalsIgnoreCase("Bike")) {
