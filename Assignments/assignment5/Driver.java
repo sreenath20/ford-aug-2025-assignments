@@ -1,8 +1,5 @@
 package com.assignments.assignment5;
 
-import com.assignments.assignment4.Loan;
-import com.training.day5.C;
-
 import java.util.Arrays;
 
 public class Driver {
