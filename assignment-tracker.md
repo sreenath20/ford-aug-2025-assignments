@@ -9,11 +9,12 @@
 
 | Day   | Topic                | Assignment Title                        | Status       | Commit Message Example                                |
 |-------|----------------------|-----------------------------------------|--------------|------------------------------------------------------|
-| Day 01 | Core Java Basics     | Assignment1 – Primitives,Wrappers,Operators       | ✅ Completed    | Implemented in [Assignment1.java](Assignments/Assignment1.java) and called in [Driver.java](Assignments/Driver.java)              |
-| Day 02 | Core Java Basics         | Assignment2 – Conditions,Loops         | ✅ Completed    | Implemented in [Assignment2Part2.java](Assignments/Assignment1.java) and called in [Driver.java](Assignments/Driver.java)       |
-| Day 03 | OOPs concepts          | Assignment3 – Encapsulation,Inheritance       | ✅ Completed | Implemented in [Assignments/assignment3](./Assignments/assignment3/) folder and called in [assignment3/Driver.java](Assignments/assignment3/Driver.java)         |
-| Day 04 | OOPs concepts    | Assignment4 – Abstract classes,Interfaces  | ✅ Completed    | Implemented in [Assignments/assignment4](./Assignments/assignment4/) folder and called in [assignment4/Driver.java](Assignments/assignment4/Driver.java)     |
-| Day 05 | OOPs concepts    | Assignment5 – Polymorphism   | ✅ Completed   | Implemented in [Assignments/assignment5](./Assignments/assignment5/) folder and called in [assignment5/Driver.java](Assignments/assignment5/Driver.java)               |
+| Day 01 | Core Java Basics     | No Assignments       | NA   | Introduction to Java & its versions and some basics.             |
+| Day 02 | Core Java Basics     | Assignment1 – Primitives,Wrappers,Operators       | ✅ Completed    | Implemented in [Assignment1.java](Assignments/Assignment1.java) and called in [Driver.java](Assignments/Driver.java)              |
+| Day 03 | Core Java Basics         | Assignment2 – Conditions,Loops         | ✅ Completed    | Implemented in [Assignment2Part2.java](Assignments/Assignment1.java) and called in [Driver.java](Assignments/Driver.java)       |
+| Day 04 | OOPs concepts          | Assignment3 – Encapsulation,Inheritance       | ✅ Completed | Implemented in [Assignments/assignment3](./Assignments/assignment3/) folder and called in [assignment3/Driver.java](Assignments/assignment3/Driver.java)         |
+| Day 05 | OOPs concepts    | Assignment4 – Abstract classes,Interfaces  | ✅ Completed    | Implemented in [Assignments/assignment4](./Assignments/assignment4/) folder and called in [assignment4/Driver.java](Assignments/assignment4/Driver.java)     |
+| Day 06 | OOPs concepts    | Assignment5 – Polymorphism   | ✅ Completed   | Implemented in [Assignments/assignment5](./Assignments/assignment5/) folder and called in [assignment5/Driver.java](Assignments/assignment5/Driver.java)               |
 
 ---
 
