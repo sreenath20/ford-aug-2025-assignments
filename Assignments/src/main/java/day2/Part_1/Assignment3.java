@@ -1,4 +1,4 @@
-package day2Part1;
+package day2.Part_1;
 
 public class Assignment3 {
     public static void main(String[] args) {

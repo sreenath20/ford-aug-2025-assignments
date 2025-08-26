@@ -1,4 +1,4 @@
-package day2Part2;
+package day2.Part_2;
 import java.util.Scanner;
 public class Assignment7 {
     public static void main(String[] args) {
