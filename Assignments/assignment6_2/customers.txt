@@ -1,0 +1,3 @@
+John,5000
+Alice,7000
+Bob,abc
