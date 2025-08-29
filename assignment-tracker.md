@@ -22,7 +22,7 @@
 | Day 10 | Advanced Java    | Assignment9 – Collections : Set, Map  | ✅ Completed   | Implemented in [Assignments/assignment9](./Assignments/assignment9/) folder and called in [assignment9/Driver.java](Assignments/assignment9/Driver.java)               |
 | Day 11 | Advanced Java    | Assignment10 – Lambda Functions, Stream API   | ✅ Completed   | Implemented Lambda  functions  in [LambdaDriver.java](Assignments/assignment10/LambdaDriver.java) and Stream API in [StreamDriver.java](Assignments/assignment10/StreamDriver.java)           |
 | Day 12 | Advanced Java    | Assignment11 –  Layered Architecture : wallet demo  | ✅ Completed   | Implemented in   [WalletServiceImpl.java](./Assignments/WalletServiceImpl.java)        |
-| Day 13 | Advanced Java    | To completed pending assignments   | ✅ Completed   | Discussed the layered architecture with wallet demo     |
+| Day 13 | Advanced Java    | To complete pending assignments   | ✅ Completed   | Discussed the layered architecture with wallet demo     |
 
 
 
