@@ -15,6 +15,13 @@
 | Day 04 | OOPs concepts          | Assignment3 – Encapsulation,Inheritance       | ✅ Completed | Implemented in [Assignments/assignment3](./Assignments/assignment3/) folder and called in [assignment3/Driver.java](Assignments/assignment3/Driver.java)         |
 | Day 05 | OOPs concepts    | Assignment4 – Abstract classes,Interfaces  | ✅ Completed    | Implemented in [Assignments/assignment4](./Assignments/assignment4/) folder and called in [assignment4/Driver.java](Assignments/assignment4/Driver.java)     |
 | Day 06 | OOPs concepts    | Assignment5 – Polymorphism   | ✅ Completed   | Implemented in [Assignments/assignment5](./Assignments/assignment5/) folder and called in [assignment5/Driver.java](Assignments/assignment5/Driver.java)               |
+| Day 07 | Advanced Java    | Assignment6.1 – Access Specifiers | ✅ Completed   | Implemented in [Assignments/assignment6_1](./Assignments/assignment6_1/) folder and called in [assignment6_1/Driver.java](Assignments/assignment6_1/Driver.java)               |
+| Day 07 | Advanced Java    | Assignment6.2 – Exception Handling  | ✅ Completed   | Implemented in [Assignments/assignment6_2](./Assignments/assignment6_2/) folder and called in [assignment6_2/Driver.java](Assignments/assignment6_2/Driver.java)               |
+| Day 08 | Advanced Java   | Assignment7 – Custom Exceptions   | ✅ Completed   | Implemented in [Assignments/assignment7](./Assignments/assignment7/) folder and called in [assignment7/Driver.java](Assignments/assignment7/Driver.java)               |
+| Day 09 | Advanced Java    | Assignment8 – Collections : List  | ✅ Completed   | Implemented in [Assignments/assignment8](./Assignments/assignment8/) folder and called in [assignment8/Driver.java](Assignments/assignment8/Driver.java)               |
+| Day 10 | Advanced Java    | Assignment9 – Collections : Set, Map  | ✅ Completed   | Implemented in [Assignments/assignment9](./Assignments/assignment9/) folder and called in [assignment9/Driver.java](Assignments/assignment9/Driver.java)               |
+| Day 11 | Advanced Java    | Assignment10 – Lambda Functions, Stream API   | ✅ Completed   | Implemented Lambda  functions  in [LambdaDriver.java](Assignments/assignment10/LambdaDriver.java) and Stream API in [StreamDriver.java](Assignments/assignment10/StreamDriver.java)           |
+
 
 ---
 
