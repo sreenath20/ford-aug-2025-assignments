@@ -1,12 +1,9 @@
-package com.assignment.day11.day11streamsassignment;
+package com.assignment.day11_streams.day11streamsassignment;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
-import java.util.stream.Collectors;
-
-import static java.util.stream.Collectors.toList;
 
 public class Day11Assignment2 {
     public static void main(String[] args) {

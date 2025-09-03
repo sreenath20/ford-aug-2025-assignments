@@ -1,6 +1,4 @@
-package com.assignment.day10.assignment3;
-
-import java.util.Objects;
+package com.assignment.day10_set.assignment3;
 
 public class Course {
     private int courseId;

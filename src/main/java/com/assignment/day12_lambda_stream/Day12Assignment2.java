@@ -1,4 +1,4 @@
-package com.assignment.day12;
+package com.assignment.day12_lambda_stream;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,6 +1,5 @@
-package com.assignment.day12;
+package com.assignment.day12_lambda_stream;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.*;

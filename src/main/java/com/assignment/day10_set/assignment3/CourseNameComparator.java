@@ -1,4 +1,4 @@
-package com.assignment.day10.assignment3;
+package com.assignment.day10_set.assignment3;
 
 import java.util.Comparator;
 

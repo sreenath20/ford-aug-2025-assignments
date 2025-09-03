@@ -1,4 +1,4 @@
-package com.assignment.day10.assignment1;
+package com.assignment.day10_set.assignment1;
 
 import java.util.Objects;
 

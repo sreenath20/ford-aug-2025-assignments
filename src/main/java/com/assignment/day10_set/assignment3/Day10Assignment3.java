@@ -1,6 +1,4 @@
-package com.assignment.day10.assignment3;
-
-import com.assignment.day10.assignment2.Product;
+package com.assignment.day10_set.assignment3;
 
 import java.util.*;
 

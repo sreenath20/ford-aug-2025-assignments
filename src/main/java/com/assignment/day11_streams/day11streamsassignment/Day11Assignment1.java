@@ -1,4 +1,4 @@
-package com.assignment.day11.day11streamsassignment;
+package com.assignment.day11_streams.day11streamsassignment;
 
 import java.util.*;
 

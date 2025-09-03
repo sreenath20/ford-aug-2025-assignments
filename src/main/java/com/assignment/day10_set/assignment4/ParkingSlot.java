@@ -1,4 +1,4 @@
-package com.assignment.day10.assignment4;
+package com.assignment.day10_set.assignment4;
 
 public class ParkingSlot {
     int slotId;
