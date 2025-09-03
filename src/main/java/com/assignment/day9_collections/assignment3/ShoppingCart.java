@@ -1,6 +1,5 @@
-package com.assignment.day9.assignment3;
+package com.assignment.day9_collections.assignment3;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 

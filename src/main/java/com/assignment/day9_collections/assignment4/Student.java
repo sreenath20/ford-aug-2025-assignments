@@ -1,4 +1,4 @@
-package com.assignment.day9.assignment4;
+package com.assignment.day9_collections.assignment4;
 
 class Student extends Object implements Comparable<Student>{
     private int rollNo;

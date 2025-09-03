@@ -1,4 +1,4 @@
-package com.assignment.day9.assignment2;
+package com.assignment.day9_collections.assignment2;
 
 
 import java.util.ArrayList;

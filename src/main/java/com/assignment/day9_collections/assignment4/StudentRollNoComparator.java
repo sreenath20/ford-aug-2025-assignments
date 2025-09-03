@@ -1,4 +1,4 @@
-package com.assignment.day9.assignment4;
+package com.assignment.day9_collections.assignment4;
 
 public class StudentRollNoComparator implements java.util.Comparator<Student> {
     @Override

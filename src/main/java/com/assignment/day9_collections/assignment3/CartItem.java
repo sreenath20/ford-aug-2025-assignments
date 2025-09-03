@@ -1,4 +1,4 @@
-package com.assignment.day9.assignment3;
+package com.assignment.day9_collections.assignment3;
 
 import java.util.Objects;
 
