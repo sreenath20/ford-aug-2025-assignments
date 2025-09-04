@@ -28,9 +28,9 @@
 
 **Notes / Challenges :** (Write about problems faced, solutions, clarifications asked, etc.)
 
-Day 01: Gone through the JAVA versions and syntaxes.
+Day 01: Understood the JAVA versions and syntaxes.
 
-Day 01: Practiced loops and conditionals. Faced minor issue with while loop syntax.
+Day 01: Practiced loops and conditionals. Faced minor issue with switch case syntax.
 
 Day 02: Learned constructor overloading. Initially confused about this() usage.
 
