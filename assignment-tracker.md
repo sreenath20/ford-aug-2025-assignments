@@ -23,9 +23,6 @@
 | Day 10 | Advanced Java        | Assignment_09                           | ✅ Completed  | Added Assignment_09                                   |
 | Day 11 | Advanced Java        | Assignment_10 part1                     | ✅ Completed  | Added Assignment_10                                   |
 | Day 12 | Advanced Java        | Assignment_10 part2                     | ✅ Completed  | Added Assignment_10                                   |
-| Day 13 | Advanced Java        |                                         | ⏳Pending     |                                                       |
-
-
 
 ---
 
