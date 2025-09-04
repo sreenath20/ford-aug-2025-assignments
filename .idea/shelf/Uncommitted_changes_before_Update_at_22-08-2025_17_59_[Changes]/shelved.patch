@@ -1,7 +1,0 @@
-Index: .gitignore
-===================================================================
-diff --git a/.gitignore b/.gitignore
---- a/.gitignore	(revision aa931fa1ba501243d60e95e5d9827b5c896b2ef7)
-+++ b/.gitignore	(date 1755852079258)
-@@ -1,0 +1,1 @@
-+
