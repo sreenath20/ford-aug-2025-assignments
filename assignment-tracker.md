@@ -23,7 +23,7 @@
 | Day 11 | Advanced Java    | Assignment10 – Lambda Functions, Stream API   | ✅ Completed   | Implemented Lambda  functions  in [LambdaDriver.java](Assignments/assignment10/LambdaDriver.java) and Stream API in [StreamDriver.java](Assignments/assignment10/StreamDriver.java)           |
 | Day 12 | Advanced Java    | Assignment11 –  Layered Architecture : wallet demo  | ✅ Completed   | Implemented using Map in   [WalletServiceImpl.java](./Assignments/WalletServiceImpl.java)        |
 | Day 13 | Advanced Java    | To complete pending assignments   | ✅ Completed   | Discussed the layered architecture with wallet demo      |
-| Day 14 | PostgreSQL       | Revised on SQL, DML, DDL   |     ✅ Completed   | SQL queries in [PostgreSQL.txt](./Assignment/PostgreSQL.txt)    |
+| Day 14 | PostgreSQL       | Revised on SQL, DML, DDL   |     ✅ Completed   | SQL queries in [PostgreSQL.txt](./Assignments/PostgreSQL.txt)    |
 | Day 15 | PostgreSQL    | Discussed the assignment queries and practised joins.   | NA |  NA|
 | Day 16 | JDBC Connection   | Learned to implement JDBC connnection using Connection Driver.   |  NA |   Created sample tables and practised CRUD operations through JDBC   |
 | Day 17 | JDBC Connection   |Assignment  - To complete DAO layer of wallet application   |  ✅ Completed  | Implemented in [wallet/WalletDAOImpl.java](./Assignments/wallet/WalletDAOImpl.java)   |
