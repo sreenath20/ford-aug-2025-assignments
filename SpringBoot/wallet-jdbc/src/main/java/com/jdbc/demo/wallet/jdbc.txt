@@ -1,0 +1,27 @@
+
+
+//		Connection connection = DriverManager.getConnection("jdbc:h2:file:./data/demo", "sa", "password");
+//		String createWalletSQL = "create table wallet ( id int, name varchar(50), primary key(id))";
+//		// create table
+//		PreparedStatement preparedStatement = connection.prepareStatement(createWalletSQL);
+//		preparedStatement.execute();
+//		// insert records
+//		PreparedStatement insertPreparedStatement = connection.prepareStatement("Insert into wallet values(?,?)");
+//		insertPreparedStatement.setInt(1, 2);
+//		insertPreparedStatement.setString(2, "Ford USA");
+//		System.out.println("No of records inserted :"+insertPreparedStatement.executeUpdate());
+//		// get all records
+//		PreparedStatement selectPreparedStatement = connection.prepareStatement("Select * from wallet");
+//		ResultSet resultSet = selectPreparedStatement.executeQuery();
+//		while (resultSet.next()) {
+//			System.out.println(resultSet.getInt(1) + ":" + resultSet.getString(2));
+//		}
+//		// update a record
+//		PreparedStatement updatePreparedStatement = connection.prepareStatement("Update wallet set name = ? where id = ?");
+//		updatePreparedStatement.setString(1, "Ford Chennai");
+//		updatePreparedStatement.setInt(2, 2);
+//		System.out.println("No of records updated :"+updatePreparedStatement.executeUpdate());
+//		// Delete a record
+//		PreparedStatement deletePreparedStatement = connection.prepareStatement("delete from wallet where id = ?");
+//		deletePreparedStatement.setInt(1,2);
+//		System.out.println("No of records deleted  :"+deletePreparedStatement.executeUpdate());
