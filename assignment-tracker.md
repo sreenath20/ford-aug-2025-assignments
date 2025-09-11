@@ -9,7 +9,6 @@
 
 | Day   | Topic                | Assignment                         | Status    | Reference Message                         |
 |-------|----------------------|-----------------------------------------|--------------|------------------------------------------------------|
-| Day 01 | Core Java Basics     | Introduction to Java & its versions and some basics.      | NA   | NA             |
 | Day 02 | Core Java Basics     | Assignment1 – Primitives,Wrappers,Operators       | ✅ Completed    | Implemented in [Assignment1.java](Assignments/Assignment1.java) and called in [Driver.java](Assignments/Driver.java)              |
 | Day 03 | Core Java Basics         | Assignment2 – Conditions,Loops         | ✅ Completed    | Implemented in [Assignment2Part2.java](Assignments/Assignment1.java) and called in [Driver.java](Assignments/Driver.java)       |
 | Day 04 | OOPs concepts          | Assignment3 – Encapsulation,Inheritance       | ✅ Completed | Implemented in [Assignments/assignment3](./Assignments/assignment3/) folder and called in [assignment3/Driver.java](Assignments/assignment3/Driver.java)         |
@@ -31,6 +30,7 @@
 | Day 19 | Spring Framework    | Assignment - Spring Core,IoC, DI implementation | ✅ Completed  |  Implemented in [Assignments/food_delivery](./Assignments/food_delivery/) folder and controlled in [MainApp.java](./Assignments/food_delivery/MainApp.java)  |
 | Day 20 |  Spring Boot   |  Spring boot web application, RESTful APIs developement  |  NA  |  Discussed on servlets, HTTP requests, and the MVC architecture, upgrading Standalone Application to Web Application with Layered  Architecture |
 | Day 21 |  Spring Boot   |  Assignment - To implement RESTfull API controller for Wallet application |  ✅ Completed   |  Implemented in [wallet/WalletController.java](./Assignments/wallet/WalletController.java)  |
+| Day 22 |  Spring Boot   |  Assignment - To implement REST API controller for Product Management with clear JSON error response |  ✅ Completed   |  Implemented REST API in [product/ProductController.java](./Assignments/product/ProductController.java) and error handler in [product/ProductControllerAdvice.java](./Assignments/product/ProductControllerAdvice.java) |
 
 
 
