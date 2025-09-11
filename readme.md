@@ -1,3 +1,11 @@
+
+
+
+
+# Find all assignments in [Assignments](./Assignments/) folder.
+
+
+
 IntelliJ Git Workflow – Daily Assignment Submission
 ✅ With this guide, students have a GitHub-styled, step-by-step IntelliJ workflow for daily assignment submission.
 
