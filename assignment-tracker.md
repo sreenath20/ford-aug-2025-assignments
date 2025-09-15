@@ -31,9 +31,7 @@
 | Day 20 |  Spring Boot   |  Spring boot web application, RESTful APIs developement  |  NA  |  Discussed on servlets, HTTP requests, and the MVC architecture, upgrading Standalone Application to Web Application with Layered  Architecture |
 | Day 21 |  Spring Boot   |  Assignment - To implement RESTfull API controller for Wallet application |  ✅ Completed   |  Implemented in [wallet/WalletController.java](./Assignments/wallet/WalletController.java)  |
 | Day 22 |  Spring Boot   |  Assignment - To implement REST API controller for Product Management with clear JSON error response |  ✅ Completed   |  Implemented REST API in [product/ProductController.java](./Assignments/product/ProductController.java) and error handler in [product/ProductControllerAdvice.java](./Assignments/product/ProductControllerAdvice.java) |
-
-
-
+| Day 24 |  Spring Boot   |  Assignment - To implement custom JPA repository methonds on Product Management |  ✅ Completed   |  Implemented custom JPA methods in [product-with-jpa/ProductDAO.java](./Assignments/product-with-jpa/ProductDAO.java) except Advanced Queries and Pagination & Performance       |
 
 ---
 
