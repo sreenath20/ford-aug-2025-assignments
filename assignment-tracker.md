@@ -32,7 +32,7 @@
 | Day 21 |  Spring Boot   |  Assignment - To implement RESTfull API controller for Wallet application |  ✅ Completed   |  Implemented in [wallet/WalletController.java](./Assignments/wallet/WalletController.java)  |
 | Day 22 |  Spring Boot   |  Assignment - To implement REST API controller for Product Management with clear JSON error response |  ✅ Completed   |  Implemented REST API in [product/ProductController.java](./Assignments/product/ProductController.java) and error handler in [product/ProductControllerAdvice.java](./Assignments/product/ProductControllerAdvice.java) |
 | Day 24 |  Spring Boot   |  Assignment - To implement custom JPA repository methonds on Product Management |  ✅ Completed   |  Implemented custom JPA methods in [product-with-jpa/ProductDAO.java](./Assignments/product-with-jpa/ProductDAO.java) except Advanced Queries and Pagination & Performance       |
-
+| Day 25 |  Spring Boot   |  Assignment - To implement Wallet application with Spring Boot Data JPA  |  Implemented   in [wallet-with-jpa/WalletRepository.java](./Assignments/wallet-with-jpa/WalletRepository.java) and services in [wallet-with-jpa/WalletServiceImpl.java](./Assignments/wallet-with-jpa/WalletServiceImpl.java)|
 ---
 
 **Notes / Challenges :** (Write about problems faced, solutions, clarifications asked, etc.)
