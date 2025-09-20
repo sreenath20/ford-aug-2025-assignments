@@ -33,6 +33,7 @@
 | Day 22 |  Spring Boot   |  Assignment - To implement REST API controller for Product Management with clear JSON error response |  ✅ Completed   |  Implemented REST API in [product/ProductController.java](./Assignments/product/ProductController.java) and error handler in [product/ProductControllerAdvice.java](./Assignments/product/ProductControllerAdvice.java) |
 | Day 24 |  Spring Boot   |  Assignment - To implement custom JPA repository methonds on Product Management |  ✅ Completed   |  Implemented custom JPA methods in [product-with-jpa/ProductDAO.java](./Assignments/product-with-jpa/ProductDAO.java) except Advanced Queries and Pagination & Performance       |
 | Day 25 |  Spring Boot   |  Assignment - To implement Wallet application with Spring Boot Data JPA  | ✅ Completed  |Implemented   in [wallet-with-jpa/WalletRepository.java](./Assignments/wallet-with-jpa/WalletRepository.java) and services in [wallet-with-jpa/WalletServiceImpl.java](./Assignments/wallet-with-jpa/WalletServiceImpl.java)|
+| Day 26 |  Spring Boot   |  Assignment - To implement one to one mapping between User and Cart entity | ✅ Completed  | Implemented bi-directional one to one mapping between [UserTable.java](./Assignments/oneToOne/users/UserTable.java) and [Cart.java](./Assignments/oneToOne/cart/Cart.java) in [Assignments/oneToOne](./Assignments/oneToOne/) folder|
 ---
 
 **Notes / Challenges :** (Write about problems faced, solutions, clarifications asked, etc.)
