@@ -1,4 +1,5 @@
 package com.demo.product_rest_api;
+
 import java.util.Collection;
 
 public interface ProductDAO {
@@ -7,13 +8,9 @@ public interface ProductDAO {
 
     Product getProductById(Integer productId) throws ProductException;
 
-    Collection<Product> getProductByName(String productName) throws ProductException;
-
     Product updateProduct(Product product) throws ProductException;
 
     Collection<Product> getAllProducts() throws ProductException;
-
-    Collection<Product> findAllProductsHavingPriceBetween(Double startPrice, Double endPrice) throws ProductException;
 
     Boolean deleteProductById(Product product) throws ProductException;
 

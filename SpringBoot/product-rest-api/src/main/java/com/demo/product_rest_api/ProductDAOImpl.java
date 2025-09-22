@@ -28,7 +28,6 @@ public class ProductDAOImpl implements ProductDAO {
 
     @Override
     public Product saveProduct(Product newProduct) throws ProductException {
-
         String insertQuery = "INSERT INTO product VALUES (?,?,?,?)";
 
         try {
@@ -119,56 +118,7 @@ public class ProductDAOImpl implements ProductDAO {
     }
 
     @Override
-    public Collection<Product> getProductByName(String productName) throws ProductException {
-        String selectQuery = "SELECT * FROM product WHERE productName = ?";
-        List<Product> products = new ArrayList<>();
-        try {
-            PreparedStatement preparedStatement = connection.prepareStatement(selectQuery);
-            preparedStatement.setString(1, productName);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()) {
-                Product product = new Product();
-                product.setProductId(resultSet.getInt("productId"));
-                product.setProductName(resultSet.getString("productName"));
-                product.setProductPrice(resultSet.getDouble("productPrice"));
-                product.setQuantity(resultSet.getInt("quantity"));
-                products.add(product);
-            }
-            return products;
-        } catch (SQLException e) {
-            throw new ProductException(e.getMessage());
-        }
-    }
-
-    @Override
-    public Collection<Product> findAllProductsHavingPriceBetween(Double startPrice, Double endPrice) throws ProductException {
-
-        String selectQuery = "SELECT * FROM product WHERE productPrice BETWEEN ? AND ?";
-        List<Product> products = new ArrayList<>();
-        try {
-            PreparedStatement preparedStatement = connection.prepareStatement(selectQuery);
-            preparedStatement.setDouble(1, startPrice);
-            preparedStatement.setDouble(2, endPrice);
-            ResultSet resultSet = preparedStatement.executeQuery();
-
-            while (resultSet.next()) {
-                Product product = new Product();
-                product.setProductId(resultSet.getInt("productId"));
-                product.setProductName(resultSet.getString("productName"));
-                product.setProductPrice(resultSet.getDouble("productPrice"));
-                product.setQuantity(resultSet.getInt("quantity"));
-                products.add(product);
-            }
-
-            return products;
-        } catch (SQLException e) {
-            throw new ProductException(e.getMessage());
-        }
-    }
-
-    @Override
     public Product updatePrice(Product product, Double updatedPrice) throws ProductException {
-
         String updateQuery = "UPDATE product SET productPrice = ? WHERE productId = ?";
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(updateQuery);

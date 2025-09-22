@@ -4,21 +4,19 @@ import java.util.Collection;
 
 public interface ProductService {
 
-    Product addNewProduct(Product newProduct) throws ProductException;
+    Product addNewProduct(Product newProduct);
 
-    Product getProductById(Integer productId) throws ProductException;
+    Product getProductById(Integer productId);
 
-    Collection<Product> getAllProducts() throws ProductException;
+    Collection<Product> getAllProducts();
 
-    Product updateProduct(Product product) throws ProductException;
+    Product updateProduct(Integer productId, Product product);
 
-    Collection<Product> sortProducts(String sortOrder) throws ProductException;
+    Product updateProductName(Integer productId, String newName);
 
-    Collection<Product> findProductsByName(String productName) throws ProductException;
+    String updateProductPrice(Integer productId, Double updatedPrice);
 
-    Collection<Product> findAllProductsHavingPriceBetween(Double startPrice, Double endPrice) throws ProductException;
+    Product searchProductByName(String productName);
 
-    String updateProductPrice(Integer productId, Double updatedPrice) throws ProductException;
-
-    String deleteProductById(Integer productId) throws ProductException;
+    String deleteProductById(Integer productId);
 }

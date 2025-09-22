@@ -4,125 +4,114 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
-import java.util.Comparator;
-import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProductServiceImpl implements ProductService {
 
+    private final ProductDAO productDAO;
+
     @Autowired
-    private ProductDAO productDAO;
-
-    @Override
-    public Product addNewProduct(Product newProduct) throws ProductException {
-
-        try {
-            Product foundProduct = productDAO.getProductById(newProduct.getProductId());
-            if (foundProduct != null) {
-                throw new ProductException("This product has already been registered with id : " + newProduct.getProductId());
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-        productDAO.saveProduct(newProduct);
-
-        return newProduct;
+    public ProductServiceImpl(ProductDAO productDAO) {
+        this.productDAO = productDAO;
     }
 
     @Override
-    public Product getProductById(Integer productId) throws ProductException {
+    public Product addNewProduct(Product newProduct) {
+        if (newProduct.getProductName() == null || newProduct.getProductName().isEmpty())
+            throw new InvalidProductDataException("Product name should not be null or empty");
+
+        if (newProduct.getProductPrice() <= 0)
+            throw new InvalidProductDataException("Price should be greater than 0");
+
+        if (newProduct.getQuantity() < 0)
+            throw new InvalidProductDataException("Quantity should not be less than 0");
+
+        Product foundProduct = productDAO.getProductById(newProduct.getProductId());
+        if (foundProduct != null) {
+            throw new InvalidProductDataException("Product already exists with id: " + newProduct.getProductId());
+        }
+
+        return productDAO.saveProduct(newProduct);
+    }
+
+    @Override
+    public Product getProductById(Integer productId) {
         Product foundProduct = productDAO.getProductById(productId);
         if (foundProduct == null) {
-            throw new ProductException("Product not found for id : " + productId);
+            throw new ProductNotFoundException("Product not found for id: " + productId);
         }
         return foundProduct;
     }
 
     @Override
-    public Collection<Product> getAllProducts() throws ProductException {
-
-        Collection<Product> products = productDAO.getAllProducts();
-        return products;
+    public Collection<Product> getAllProducts() {
+        return productDAO.getAllProducts();
     }
 
     @Override
-    public Product updateProduct(Product product) throws ProductException {
-        Product foundProduct = productDAO.getProductById(product.getProductId());
-        if (foundProduct == null) {
-            throw new ProductException("Product not found for id : " + product.getProductId());
-        } else {
-            productDAO.updateProduct(product);
-        }
-        return product;
-    }
+    public Product updateProduct(Integer productId, Product product) {
+        if (product.getProductPrice() <= 0)
+            throw new InvalidProductDataException("Price should be greater than 0");
 
-    @Override
-    public Collection<Product> sortProducts(String sortOrder) throws ProductException {
+        if (product.getQuantity() < 0)
+            throw new InvalidProductDataException("Quantity should not be less than 0");
 
-        Comparator<Product> productComparator;
-        List<Product> products = (List<Product>) productDAO.getAllProducts();
-        if (products == null) {
-            throw new ProductException("No products found.");
-        }
-        switch (sortOrder) {
-            case "name":
-                productComparator = (p1, p2) -> p1.getProductName().compareTo(p2.getProductName());
-                break;
-            case "price":
-                productComparator = (p1, p2) -> p1.getProductPrice().compareTo(p2.getProductPrice());
-                break;
-            case "quantity":
-                productComparator = (p1, p2) -> p1.getQuantity().compareTo(p2.getQuantity());
-                break;
-            case "id":
-                productComparator = (p1, p2) -> p1.getProductId().compareTo(p2.getProductId());
-                break;
-            default:
-                throw new ProductException("Invalid order use[name,id,price,quantity]");
-        }
-        products.sort(productComparator);
-        return products;
-    }
-
-    @Override
-    public Collection<Product> findProductsByName(String productName) throws ProductException {
-        Collection<Product> products = productDAO.getProductByName(productName);
-        if (products.isEmpty()) {
-            throw new ProductException("No products found for name : " + productName);
-        }
-        return products;
-    }
-
-    @Override
-    public Collection<Product> findAllProductsHavingPriceBetween(Double startPrice, Double endPrice) throws ProductException {
-
-        List<Product> products = (List<Product>) productDAO.findAllProductsHavingPriceBetween(startPrice, endPrice);
-        if (products.isEmpty()) {
-            throw new ProductException("No products found for price between : " + startPrice + " and " + endPrice);
-        }
-        return products;
-    }
-
-    @Override
-    public String updateProductPrice(Integer productId, Double updatedPrice) throws ProductException {
         Product foundProduct = productDAO.getProductById(productId);
         if (foundProduct == null) {
-            throw new ProductException("Product not found for id : " + productId);
-        } else {
-            foundProduct.setProductPrice(updatedPrice);
-            productDAO.updatePrice(foundProduct, updatedPrice);
+            throw new ProductNotFoundException("Product not found for id: " + productId);
         }
-        return "Updated price for product id : " + productId;
+
+        product.setProductId(productId);
+        return productDAO.updateProduct(product);
     }
 
     @Override
-    public String deleteProductById(Integer productId) throws ProductException {
+    public Product updateProductName(Integer productId, String newName) {
         Product foundProduct = productDAO.getProductById(productId);
         if (foundProduct == null) {
-            throw new ProductException("Product not found for id : " + productId);
-        } else {
-            productDAO.deleteProductById(foundProduct);
+            throw new ProductNotFoundException("Product not found for id: " + productId);
         }
-        return "Product deleted successfully..! Product : " + foundProduct.getProductName();
+        foundProduct.setProductName(newName);
+        return productDAO.updateProduct(foundProduct);
+    }
+
+    @Override
+    public Product searchProductByName(String productName) {
+        Collection<Product> foundProducts = productDAO.getAllProducts();
+
+        Optional<Product> productByName = foundProducts.stream()
+                .filter(product -> product.getProductName().equalsIgnoreCase(productName))
+                .findFirst();
+
+        if (productByName.isEmpty())
+            throw new ProductNotFoundException("Product with name " + productName + " not found");
+
+        return productByName.get();
+    }
+
+    @Override
+    public String updateProductPrice(Integer productId, Double updatedPrice) {
+        if (updatedPrice <= 0)
+            throw new InvalidProductDataException("Price should be greater than 0");
+
+        Product foundProduct = productDAO.getProductById(productId);
+        if (foundProduct == null) {
+            throw new ProductNotFoundException("Product not found for id: " + productId);
+        }
+
+        foundProduct.setProductPrice(updatedPrice);
+        productDAO.updatePrice(foundProduct, updatedPrice);
+        return "Updated price for product id: " + productId;
+    }
+
+    @Override
+    public String deleteProductById(Integer productId) {
+        Product foundProduct = productDAO.getProductById(productId);
+        if (foundProduct == null) {
+            throw new ProductNotFoundException("Product not found for id: " + productId);
+        }
+        productDAO.deleteProductById(foundProduct);
+        return "Product deleted successfully! Product: " + foundProduct.getProductName();
     }
 }

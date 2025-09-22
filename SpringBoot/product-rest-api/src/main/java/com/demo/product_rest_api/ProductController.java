@@ -6,26 +6,19 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
 
 @RestController
-@RequestMapping("api/v1/product")
+@RequestMapping("api/product")
 public class ProductController {
 
+    private final ProductService productService;
+
     @Autowired
-    private ProductService productService;
+    public ProductController(ProductService productService) {
+        this.productService = productService;
+    }
 
     @PostMapping("/add")
     public Product addNewProduct(@RequestBody Product newProduct) {
-        try {
-            return productService.addNewProduct(newProduct);
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-        return null;
-    }
-
-    @PostMapping("add/products")
-    public String addMultipleProducts(@RequestBody Collection<Product> newProducts) {
-        newProducts.forEach(product -> productService.addNewProduct(product));
-        return "Multiple Products added successfully";
+        return productService.addNewProduct(newProduct);
     }
 
     @GetMapping("/{id}")
@@ -40,19 +33,12 @@ public class ProductController {
 
     @PutMapping("/{id}")
     public Product updateProduct(@PathVariable("id") Integer productId, @RequestBody Product product) {
-        product.setProductId(productId);
-        try {
-            return productService.updateProduct(product);
-        } catch (ProductException e) {
-            throw new RuntimeException(e);
-        }
+        return productService.updateProduct(productId, product);
     }
 
     @PatchMapping("/{id}/name")
     public Product updateProductName(@PathVariable("id") Integer productId, @RequestParam("name") String newName) {
-        Product foundProduct = productService.getProductById(productId);
-        foundProduct.setProductName(newName);
-        return productService.updateProduct(foundProduct);
+        return productService.updateProductName(productId, newName);
     }
 
     @PatchMapping("/{id}/price")
@@ -60,20 +46,9 @@ public class ProductController {
         return productService.updateProductPrice(productId, newPrice);
     }
 
-    @GetMapping("/sort/order/{order}")
-    public Collection<Product> getProductByOrder(@PathVariable("order") String sortOrder) {
-        return productService.sortProducts(sortOrder);
-    }
-
-    @GetMapping("/find/products/name/{name}")
-    public Collection<Product> getProductsByName(@PathVariable("name") String productName) {
-        return productService.findProductsByName(productName);
-    }
-
-    @GetMapping("/get/products/price/between")
-    public Collection<Product> getProductByBetween(@RequestParam("fromPrice") Double startPrice,
-                                                   @RequestParam("toPrice") Double endPrice) {
-        return productService.findAllProductsHavingPriceBetween(startPrice, endPrice);
+    @GetMapping("/search")
+    public Product getProductByName(@RequestParam("name") String productName) {
+        return productService.searchProductByName(productName);
     }
 
     @DeleteMapping("/{id}")
