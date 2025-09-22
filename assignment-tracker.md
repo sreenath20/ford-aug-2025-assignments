@@ -33,7 +33,8 @@
 | Day 19 | Spring Core          | Spring Core/food-delivery-app-rcs3      | ✅ Completed  | Implemented a Layered Architecture using Spring IoC container & Dependency Injection |
 | Day 20 | Spring Boot          | No Assignment                           | 🚫NA          | Had discussion on APIs Development, MVC Architecture, Servlets, HTTP requests, and building Web Application with Layered Architecture |
 | Day 21 | Spring Boot          | wallet-rest-api                         | ✅ Completed  | Implemented a REST API for the WalletController & completed the Wallet Application |
-| Day 22 | Spring Boot          | Product Management                      | ⚠️ Pending    | In-Progress                                            |
+| Day 22 | Spring Boot          | product-rest-api                        | ✅ Completed  | Implemented product-rest-api with H2 database, clear JSON error handling, API controller & global exception handler |
+| Day 23 | Spring Boot          | No Assignment                           | 🚫NA          | |
 
 ---
 
