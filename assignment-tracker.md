@@ -35,6 +35,7 @@
 | Day 25 |  Spring Boot   |  Assignment - To implement Wallet application with Spring Boot Data JPA  | ✅ Completed  |Implemented   in [wallet-with-jpa/WalletRepository.java](./Assignments/wallet-with-jpa/WalletRepository.java) and services in [wallet-with-jpa/WalletServiceImpl.java](./Assignments/wallet-with-jpa/WalletServiceImpl.java)|
 | Day 26 |  Spring Boot   |  Assignment - To implement one to one mapping between User and Cart entity | ✅ Completed  | Implemented bi-directional one to one mapping between [UserTable.java](./Assignments/oneToOne/users/UserTable.java) and [Cart.java](./Assignments/oneToOne/cart/Cart.java) in [Assignments/oneToOne](./Assignments/oneToOne/) folder|
 | Day 27 |  Spring Boot   |  Assignment - To implement one to many mapping between Department and Employee entity | ✅ Completed  | Implemented bi-directional one to many mapping between [Department.java](./Assignments/oneToMany/department/Department.java) and [Employee.java](./Assignments/oneToMany/employee/Employee.java) in [Assignments/oneToMany](./Assignments/oneToMany) folder|
+| Day 29 |  Spring Boot   |  Assignment - To implement Library Management System with muliple mappings and exception handling.| ✅ Completed  | Implemented in [Assignments/library](./Assignments/library/) folder with [GlobalExceptionHandler.java](./Assignments/library/GlobalExceptionHandler.java)|
 ---
 
 **Notes / Challenges :** (Write about problems faced, solutions, clarifications asked, etc.)
