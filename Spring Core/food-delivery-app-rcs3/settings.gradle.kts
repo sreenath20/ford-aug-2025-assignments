@@ -1,0 +1,1 @@
+rootProject.name = "food-delivery-app-rcs3"
