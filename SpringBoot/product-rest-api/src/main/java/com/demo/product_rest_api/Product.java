@@ -5,14 +5,13 @@ public class Product {
     private Integer productId;
     private String productName;
     private Double productPrice;
-
-    private Integer quantity;
+    private Integer stock;
 
     public Product(Integer productId, String productName, Double productPrice, Integer quantity) {
         this.productId = productId;
         this.productName = productName;
         this.productPrice = productPrice;
-        this.quantity = quantity;
+        this.stock = quantity;
     }
 
     public Product() {
@@ -42,12 +41,12 @@ public class Product {
         this.productPrice = productPrice;
     }
 
-    public Integer getQuantity() {
-        return quantity;
+    public Integer getStock() {
+        return stock;
     }
 
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
+    public void setStock(Integer stock) {
+        this.stock = stock;
     }
 
     @Override
@@ -56,7 +55,7 @@ public class Product {
                 "productId=" + productId +
                 ", productName='" + productName + '\'' +
                 ", productPrice=" + productPrice +
-                ", quantity=" + quantity +
+                ", stock=" + stock +
                 '}';
     }
 }

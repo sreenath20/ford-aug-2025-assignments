@@ -4,7 +4,7 @@ import java.util.Collection;
 
 public interface ProductService {
 
-    Product addNewProduct(Product newProduct);
+    Product addProduct(Product newProduct);
 
     Product getProductById(Integer productId);
 
@@ -12,11 +12,9 @@ public interface ProductService {
 
     Product updateProduct(Integer productId, Product product);
 
-    Product updateProductName(Integer productId, String newName);
+    Product updateStock(Integer productId, Integer stock);
 
-    String updateProductPrice(Integer productId, Double updatedPrice);
+    Product searchProductsByName(String keyword);
 
-    Product searchProductByName(String productName);
-
-    String deleteProductById(Integer productId);
+    String deleteProduct(Integer productId);
 }

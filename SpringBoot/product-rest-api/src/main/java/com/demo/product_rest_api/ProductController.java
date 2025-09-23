@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
 
 @RestController
-@RequestMapping("api/product")
+@RequestMapping("/products")  // ← Changed from "api/product" to "/products"
 public class ProductController {
 
     private final ProductService productService;
@@ -16,9 +16,9 @@ public class ProductController {
         this.productService = productService;
     }
 
-    @PostMapping("/add")
-    public Product addNewProduct(@RequestBody Product newProduct) {
-        return productService.addNewProduct(newProduct);
+    @PostMapping  // ← Changed from "/add" to ""
+    public Product addProduct(@RequestBody Product newProduct) {
+        return productService.addProduct(newProduct);
     }
 
     @GetMapping("/{id}")
@@ -26,7 +26,7 @@ public class ProductController {
         return productService.getProductById(productId);
     }
 
-    @GetMapping("/all")
+    @GetMapping  // ← Changed from "/all" to ""
     public Collection<Product> getAllProducts() {
         return productService.getAllProducts();
     }
@@ -36,23 +36,18 @@ public class ProductController {
         return productService.updateProduct(productId, product);
     }
 
-    @PatchMapping("/{id}/name")
-    public Product updateProductName(@PathVariable("id") Integer productId, @RequestParam("name") String newName) {
-        return productService.updateProductName(productId, newName);
-    }
-
-    @PatchMapping("/{id}/price")
-    public String updateProductPrice(@PathVariable("id") Integer productId, @RequestParam("price") Double newPrice) {
-        return productService.updateProductPrice(productId, newPrice);
-    }
-
-    @GetMapping("/search")
-    public Product getProductByName(@RequestParam("name") String productName) {
-        return productService.searchProductByName(productName);
+    @PatchMapping("/{id}/stock")  // ← NEW: Stock update endpoint
+    public Product updateStock(@PathVariable("id") Integer productId, @RequestBody Product product) {
+        return productService.updateStock(productId, product.getStock());
     }
 
     @DeleteMapping("/{id}")
-    public String deleteProductById(@PathVariable("id") Integer productId) {
-        return productService.deleteProductById(productId);
+    public String deleteProduct(@PathVariable("id") Integer productId) {
+        return productService.deleteProduct(productId);
+    }
+
+    @GetMapping("/search")
+    public Product searchProducts(@RequestParam("name") String keyword) {
+        return productService.searchProductsByName(keyword);
     }
 }
