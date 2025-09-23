@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
 
 @RestController
-@RequestMapping("/products")  // ← Changed from "api/product" to "/products"
+@RequestMapping("/products")  
 public class ProductController {
 
     private final ProductService productService;
@@ -16,7 +16,7 @@ public class ProductController {
         this.productService = productService;
     }
 
-    @PostMapping  // ← Changed from "/add" to ""
+    @PostMapping  
     public Product addProduct(@RequestBody Product newProduct) {
         return productService.addProduct(newProduct);
     }
@@ -26,7 +26,7 @@ public class ProductController {
         return productService.getProductById(productId);
     }
 
-    @GetMapping  // ← Changed from "/all" to ""
+    @GetMapping  
     public Collection<Product> getAllProducts() {
         return productService.getAllProducts();
     }
@@ -36,7 +36,7 @@ public class ProductController {
         return productService.updateProduct(productId, product);
     }
 
-    @PatchMapping("/{id}/stock")  // ← NEW: Stock update endpoint
+    @PatchMapping("/{id}/stock")  
     public Product updateStock(@PathVariable("id") Integer productId, @RequestBody Product product) {
         return productService.updateStock(productId, product.getStock());
     }
