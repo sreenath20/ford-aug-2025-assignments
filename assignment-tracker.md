@@ -33,8 +33,15 @@
 | Day 19 | Spring Core          | Spring Core/food-delivery-app-rcs3      | ✅ Completed  | Implemented a Layered Architecture using Spring IoC container & Dependency Injection |
 | Day 20 | Spring Boot          | No Assignment                           | 🚫NA          | Had discussion on APIs Development, MVC Architecture, Servlets, HTTP requests, and building Web Application with Layered Architecture |
 | Day 21 | Spring Boot          | wallet-rest-api                         | ✅ Completed  | Implemented a REST API for the WalletController & completed the Wallet Application |
-| Day 22 | Spring Boot          | product-rest-api                        | ✅ Completed  | Implemented product-rest-api with H2 database, clear JSON error handling, API controller & global exception handler |
-| Day 23 | Spring Boot          | No Assignment                           | 🚫NA          | |
+| Day 22 | Spring Boot          | product-rest-api                        | ✅ Completed  | Implemented product-rest-api with in-memory Map storage, clear JSON error handling & global exception handler |
+| Day 23 | Spring Data JPA      | product-jpa-basics                      | ✅ Completed  | Discussed about JPA repository methods and implemented Product Management using Spring Boot Data JPA repository |
+| Day 24 | Spring Data JPA      | product-jpa-custom                      | ⚠️ Pending    | To implement Product Management using Spring Boot Data JPA custom repository methods & Discussed JPA Relational Mappings|
+| Day 25 | Spring Data JPA      | wallet-jpa-custom                       | ⚠️ Pending    | To implement Digital Wallet with Spring Data JPA custom repository methods and @Query annotations |
+| Day 26 | Spring Data JPA      | one-to-one mapping                      | ⚠️ Pending    | To implement bi-directional one-to-one mapping          |
+| Day 27 | Spring Data JPA      | one-to-many mapping                     | ⚠️ Pending    | To implement bi-directional one-to-many mapping         |
+| Day 28 | Spring Data JPA      | No Assignment                           | 🚫NA          | Discussed the JPA Relational Mapping Assignment         |
+| Day 29 | Spring Data JPA      | library-management-jpa                  | ⚠️ Pending    | To implement Library Management System with multiple mappings and error handling |
+| Day 30 | Junit                | No Assignment                           | 🚫NA          | Discussed & implemented the concepts of debugging & testing |
 
 ---
 
