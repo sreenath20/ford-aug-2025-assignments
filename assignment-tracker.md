@@ -41,7 +41,8 @@
 | Day 27 | Spring Data JPA      | one-to-many mapping                     | ⚠️ Pending    | To implement bi-directional one-to-many mapping         |
 | Day 28 | Spring Data JPA      | No Assignment                           | 🚫NA          | Discussed the JPA Relational Mapping Assignment         |
 | Day 29 | Spring Data JPA      | library-management-jpa                  | ⚠️ Pending    | To implement Library Management System with multiple mappings and error handling |
-| Day 30 | Junit                | No Assignment                           | 🚫NA          | Discussed & implemented the concepts of debugging & testing |
+| Day 30 | Junit                | No Assignment                           | 🚫NA          | Discussed the concepts of debugging & testing           |
+| Day 31 | Junit                | test files                              | ⚠️ Pending    | To implement the unit testing in existing application   |
 
 ---
 
