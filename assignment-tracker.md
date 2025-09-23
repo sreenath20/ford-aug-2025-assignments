@@ -35,7 +35,7 @@
 | Day 21 | Spring Boot          | wallet-rest-api                         | ✅ Completed  | Implemented a REST API for the WalletController & completed the Wallet Application |
 | Day 22 | Spring Boot          | product-rest-api                        | ✅ Completed  | Implemented product-rest-api with in-memory Map storage, clear JSON error handling & global exception handler |
 | Day 23 | Spring Data JPA      | product-jpa-basics                      | ✅ Completed  | Discussed about JPA repository methods and implemented Product Management using Spring Boot Data JPA repository |
-| Day 24 | Spring Data JPA      | product-jpa-custom                      | ⚠️ Pending    | To implement Product Management using Spring Boot Data JPA custom repository methods & Discussed JPA Relational Mappings|
+| Day 24 | Spring Data JPA      | product-jpa-custom                      | ✅ Completed  | Discussed JPA Relational Mappings & Implemented Product Management using Spring Boot Data JPA custom repository methods |
 | Day 25 | Spring Data JPA      | wallet-jpa-custom                       | ⚠️ Pending    | To implement Digital Wallet with Spring Data JPA custom repository methods and @Query annotations |
 | Day 26 | Spring Data JPA      | one-to-one mapping                      | ⚠️ Pending    | To implement bi-directional one-to-one mapping          |
 | Day 27 | Spring Data JPA      | one-to-many mapping                     | ⚠️ Pending    | To implement bi-directional one-to-many mapping         |
