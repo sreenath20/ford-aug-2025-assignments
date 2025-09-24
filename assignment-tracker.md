@@ -36,7 +36,10 @@
 | Day 26 |  Spring Boot   |  Assignment - To implement one to one mapping between User and Cart entity | ✅ Completed  | Implemented bi-directional one to one mapping between [UserTable.java](./Assignments/oneToOne/users/UserTable.java) and [Cart.java](./Assignments/oneToOne/cart/Cart.java) in [Assignments/oneToOne](./Assignments/oneToOne/) folder|
 | Day 27 |  Spring Boot   |  Assignment - To implement one to many mapping between Department and Employee entity | ✅ Completed  | Implemented bi-directional one to many mapping between [Department.java](./Assignments/oneToMany/department/Department.java) and [Employee.java](./Assignments/oneToMany/employee/Employee.java) in [Assignments/oneToMany](./Assignments/oneToMany) folder|
 | Day 29 |  Spring Boot   |  Assignment - To implement Library Management System with muliple mappings and exception handling.| ✅ Completed  | Implemented in [Assignments/library](./Assignments/library/) folder with [GlobalExceptionHandler.java](./Assignments/library/GlobalExceptionHandler.java)|
+| Day 30 |  Spring Boot Testing  |  Assignment - To write test cases to perform integration testing on wallet application.| ✅ Completed  | Test cases in [wallet-integration-tests/WalletIntegrationTests.java](./Assignments/wallet-integration-tests/WalletIntegrationTests.java) and added test reports in [wallet-integration-tests/wallet-test-reports](./Assignments/wallet-integration-tests/wallet-test-reports/) folder. [Wallet Integration Tests Code coverage](https://html-preview.github.io/?url=https://github.com/sreenath20/ford-aug-2025-assignments/blob/raamji/Assignments/wallet-integration-tests/wallet-test-reports/index.html) |
 ---
+
+https://html-preview.github.io/?url=
 
 **Notes / Challenges :** (Write about problems faced, solutions, clarifications asked, etc.)
 
@@ -62,3 +65,6 @@ Day 05: Started with Stream API. Experimented with Comparator.comparing() and .r
 - [ ] Updated README.md tracker  
 
 ---
+
+
+
