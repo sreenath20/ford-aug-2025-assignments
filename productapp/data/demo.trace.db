@@ -1,9 +1,0 @@
-2025-09-09 20:02:26.958006+05:30 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id integer not null, email varchar(255), password varchar(255), user_name varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
-create table user (user_id integer not null, email varchar(255), password varchar(255), user_name varchar(255), primary key (user_id)) [42001-232]
-2025-09-09 20:07:28.554354+05:30 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select u1_0.user_id,u1_0.email,u1_0.password,u1_0.user_name from [*]user u1_0 where u1_0.user_id=?"; expected "identifier"; SQL statement:
-select u1_0.user_id,u1_0.email,u1_0.password,u1_0.user_name from user u1_0 where u1_0.user_id=? [42001-232]
-2025-09-09 20:16:22.140073+05:30 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id integer not null, email varchar(255), password varchar(255), user_name varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
-create table user (user_id integer not null, email varchar(255), password varchar(255), user_name varchar(255), primary key (user_id)) [42001-232]
