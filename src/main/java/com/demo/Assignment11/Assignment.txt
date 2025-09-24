@@ -1,0 +1,135 @@
+Online Digital Wallet – Layered Architecture Assignment
+📌 Problem Statement
+
+Design and implement an Online Digital Wallet Application using Collections (Map) for in-memory data storage. The application must follow a layered architecture and include exception handling for invalid operations.
+
+🎯 Functional Requirements
+
+    Customer Registration
+
+    Register new customer with:
+
+    Customer ID (unique)
+
+    Name
+
+   Email / Mobile Number
+
+  Initial Balance (default = 0 if not provided).
+
+  Prevent duplicate registration.
+
+  Exception: UserAlreadyExistsException.
+
+Add Funds
+
+ Customers can add money to wallet.
+
+ Amount must be positive.
+
+ Exception: InvalidAmountException.
+
+Withdraw Funds
+
+    Customers can withdraw money.
+
+    Must have sufficient balance.
+
+    Exception: InsufficientBalanceException.
+
+Transfer Funds
+
+    Transfer funds between customers.
+
+    Validate sender and receiver.
+
+    Exceptions:
+
+    UserNotFoundException
+
+InsufficientBalanceException.
+
+    Get Account Details
+
+    Fetch account details for a given customer ID.
+
+    Exception: UserNotFoundException.
+
+Admin Functionality
+
+    Fetch all registered users.
+
+    Exception: NoUsersFoundException.
+
+🛠️ Technical Requirements
+1. Layered Architecture
+
+Model Layer (Customer)
+
+Holds customer data (id, name, email, balance).
+
+DAO Layer (WalletRepository)
+
+Handles data storage (using Map<Integer, Customer>).
+
+Operations: add, update, fetch, list customers.
+
+Service Layer (WalletService)
+
+Business logic (validations, balance checks, transfers).
+
+Uses custom exceptions for error handling.
+
+UI Layer (WalletApp / Main)
+
+Menu-driven console application.
+
+Calls service layer methods and displays results.
+
+2. Custom Exceptions
+
+UserAlreadyExistsException
+
+InvalidAmountException
+
+InsufficientBalanceException
+
+UserNotFoundException
+
+NoUsersFoundException
+
+3. Data Storage
+
+Use Map<Integer, Customer> to store customers in-memory.
+
+Key: Customer ID
+
+Value: Customer object
+
+📖 Example Flow
+
+Register C101 → Alice, balance = 500
+
+Register C102 → Bob, balance = 1000
+
+Alice adds 200 → balance = 700
+
+Bob withdraws 500 → balance = 500
+
+Alice transfers 300 to Bob →
+
+Alice = 400
+
+Bob = 800
+
+Admin lists all customers → [Alice, Bob]
+
+✅ Expected Learning Outcomes
+
+Understand layered architecture in Java projects.
+
+Implement CRUD operations using Collections.
+
+Apply exception handling for real-world wallet scenarios.
+
+Gain exposure to menu-driven console applications simulating real projects.
