@@ -1,0 +1,212 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > WalletController</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.demo.wallet.app</a>
+</div>
+
+<h1>Coverage Summary for Class: WalletController (com.demo.wallet.app)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">WalletController</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (14/14)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (6/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (19/19)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.demo.wallet.app;
+&nbsp;
+&nbsp;import org.springframework.beans.factory.annotation.Autowired;
+&nbsp;import org.springframework.http.HttpStatus;
+&nbsp;import org.springframework.web.bind.annotation.*;
+&nbsp;import java.util.Collection;
+&nbsp;
+&nbsp;@RestController
+&nbsp;@RequestMapping(&quot;wallets&quot;)
+&nbsp;public class WalletController {
+&nbsp;
+&nbsp;    private final WalletService walletService;
+&nbsp;
+&nbsp;    @Autowired
+<b class="fc">&nbsp;    public WalletController(WalletService walletService) {</b>
+<b class="fc">&nbsp;        this.walletService = walletService;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @PostMapping()
+&nbsp;    public Wallet registerNewWalletUser(@RequestBody Wallet newWallet){
+<b class="fc">&nbsp;            return  walletService.registerNewUser(newWallet);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    @PatchMapping(&quot;/deposit&quot;)
+&nbsp;    public Wallet addFundByEmail(@RequestParam(&quot;email&quot;) String email,@RequestParam(&quot;amount&quot;) Double amount){
+<b class="fc">&nbsp;        if(amount &lt; 1)</b>
+<b class="fc">&nbsp;            throw new WalletException(&quot;Amount must be greater than zero to deposit&quot;);</b>
+<b class="fc">&nbsp;        return walletService.addFundsToWalletByEmail(email,amount);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @PatchMapping(&quot;/withdraw&quot;)
+&nbsp;    public Wallet withdrawFundByEmail(@RequestParam(&quot;email&quot;) String email,
+&nbsp;                                      @RequestParam(&quot;amount&quot;) Double amount) throws WalletWithdrawException {
+<b class="fc">&nbsp;        if(amount%100 != 0 || amount &lt; 100)</b>
+<b class="fc">&nbsp;            throw new WalletWithdrawException(&quot;Amount must be a multiples of 100 and greater than 99&quot;);</b>
+&nbsp;
+<b class="fc">&nbsp;        return walletService.withdrawFundsFromWalletByEmail(email,amount);</b>
+&nbsp;
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(&quot;/all&quot;)
+&nbsp;    public Collection&lt;Wallet&gt; getAllWallets(){
+<b class="fc">&nbsp;        return walletService.getAllWallets();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @PatchMapping(&quot;/transfer&quot;)
+&nbsp;    public String transferFundByEmail(@RequestParam(&quot;fromEmail&quot;) String fromEmail,
+&nbsp;                                      @RequestParam(&quot;toEmail&quot;) String toEmail,@RequestParam(&quot;amount&quot;) Double amount){
+<b class="fc">&nbsp;        return walletService.transferFundsToWalletByEmail(fromEmail,toEmail,amount);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(&quot;/email&quot;)
+&nbsp;    public Wallet getUserByEmail(@RequestParam(&quot;email&quot;) String email){
+<b class="fc">&nbsp;        return walletService.getWalletByEmail(email);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(&quot;/log-in&quot;)
+&nbsp;    public String logIn(@RequestParam(&quot;email&quot;) String email,@RequestParam(&quot;password&quot;) String password) throws InvalidUserException {
+<b class="fc">&nbsp;            return walletService.userLogIn(email,password);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(&quot;/order/{order}&quot;)
+&nbsp;    public Collection&lt;Wallet&gt; getWalletByOrder(@PathVariable(&quot;order&quot;) String order){
+<b class="fc">&nbsp;        return walletService.sortCustomerWallets(order);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(&quot;/name/{name}&quot;)
+&nbsp;    public Collection&lt;Wallet&gt; getWalletsByName(@PathVariable(&quot;name&quot;) String name){
+<b class="fc">&nbsp;        return walletService.getWalletsByName(name);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @GetMapping(&quot;balance/between&quot;)
+&nbsp;    public Collection&lt;Wallet&gt; getWalletByBetween(@RequestParam(&quot;fromAmount&quot;) Double fromAmount,
+&nbsp;                                                 @RequestParam(&quot;toAmount&quot;) Double toAmount){
+<b class="fc">&nbsp;        return walletService.getAllWalletsHavingBalanceBetween(fromAmount,toAmount);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @PatchMapping(&quot;/update/password&quot;)
+&nbsp;    public Wallet updateUserPassword(@RequestParam(&quot;email&quot;) String email,
+&nbsp;                                     @RequestParam(&quot;oldPassword&quot;) String oldPassword,@RequestParam(&quot;newPassword&quot;) String newPassword){
+<b class="fc">&nbsp;        return walletService.updateWalletPassword(email,oldPassword,newPassword);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @DeleteMapping(&quot;/{id}&quot;)
+&nbsp;    public String deleteWalletById(@PathVariable(&quot;id&quot;) Integer id){
+<b class="fc">&nbsp;        return walletService.deleteWalletById(id);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @DeleteMapping(&quot;/delete/{email}&quot;)
+&nbsp;    public String deleteUserByEmail(@PathVariable String email){
+<b class="fc">&nbsp;        return walletService.deleteWalletByEmail(email);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-09-24 18:04</div>
+</div>
+</body>
+</html>
