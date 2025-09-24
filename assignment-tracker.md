@@ -36,13 +36,13 @@
 | Day 22 | Spring Boot          | product-rest-api                        | ✅ Completed  | Implemented product-rest-api with in-memory Map storage, clear JSON error handling & global exception handler |
 | Day 23 | Spring Data JPA      | product-jpa-basics                      | ✅ Completed  | Discussed about JPA repository methods and implemented Product Management using Spring Boot Data JPA repository |
 | Day 24 | Spring Data JPA      | product-jpa-custom                      | ✅ Completed  | Discussed JPA Relational Mappings & Implemented Product Management using Spring Boot Data JPA custom repository methods |
-| Day 25 | Spring Data JPA      | wallet-jpa-custom                       | ⚠️ Pending    | To implement Digital Wallet with Spring Data JPA custom repository methods and @Query annotations |
+| Day 25 | Spring Data JPA      | wallet-jpa-repo                         | ✅ Completed  | Implemented Digital Wallet with Spring Data JPA custom repository methods and @Query annotations |
 | Day 26 | Spring Data JPA      | one-to-one mapping                      | ⚠️ Pending    | To implement bi-directional one-to-one mapping          |
 | Day 27 | Spring Data JPA      | one-to-many mapping                     | ⚠️ Pending    | To implement bi-directional one-to-many mapping         |
 | Day 28 | Spring Data JPA      | No Assignment                           | 🚫NA          | Discussed the JPA Relational Mapping Assignment         |
 | Day 29 | Spring Data JPA      | library-management-jpa                  | ⚠️ Pending    | To implement Library Management System with multiple mappings and error handling |
-| Day 30 | Junit                | No Assignment                           | 🚫NA          | Discussed the concepts of debugging & testing           |
-| Day 31 | Junit                | test files                              | ⚠️ Pending    | To implement the unit testing in existing application   |
+| Day 30 | Testing              | No Assignment                           | 🚫NA          | Discussed the concepts of debugging & testing           |
+| Day 31 | Testing              | MockUnitTest                            | ✅ Completed  | Implement mock unit testing in WalletMockUnitTest.java  |
 
 ---
 
