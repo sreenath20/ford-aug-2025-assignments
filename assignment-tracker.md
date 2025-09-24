@@ -42,7 +42,7 @@
 | Day 28 | Spring Data JPA      | No Assignment                           | 🚫NA          | Discussed the JPA Relational Mapping Assignment         |
 | Day 29 | Spring Data JPA      | library-management-jpa                  | ⚠️ Pending    | To implement Library Management System with multiple mappings and error handling |
 | Day 30 | Testing              | No Assignment                           | 🚫NA          | Discussed the concepts of debugging & testing           |
-| Day 31 | Testing              | MockUnitTest                            | ✅ Completed  | Implement mock unit testing in WalletMockUnitTest.java  |
+| Day 31 | Testing              | MockUnitTest                            | ⏳In-Progress | Implement mock unit testing in WalletMockUnitTest.java  |
 
 ---
 
