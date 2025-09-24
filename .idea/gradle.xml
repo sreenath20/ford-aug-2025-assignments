@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Assignment10/BankTransactionSystem" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Assignment10/BankTransactionSystem" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Assignment10/DailySalesAmount" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Assignment10/DailySalesAmount" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Assignment10/OnlineShoppingSystem" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Assignment10/OnlineShoppingSystem" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Assignment10/StudentMarkAnalysis" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Assignment10/StudentMarkAnalysis" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
