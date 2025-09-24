@@ -5,6 +5,7 @@ import com.demo.library.member.Member;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -28,7 +29,7 @@ public class Book {
             joinColumns = @JoinColumn(name = "BooK_Id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "Member_Id", referencedColumnName = "id")
     )
-    private List<Member> borrowedByMembers;
+    private List<Member> borrowedByMembers = new ArrayList<>();
 
     public Book() {}
 
@@ -80,6 +81,6 @@ public class Book {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, isbn);
+        return Objects.hashCode(isbn);
     }
 }

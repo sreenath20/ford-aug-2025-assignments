@@ -6,6 +6,7 @@ import com.demo.library.membershipCard.MembershipCard;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -24,7 +25,7 @@ public class Member {
 
     @ManyToMany(mappedBy = "borrowedByMembers")
     @JsonIgnore
-    private List<Book> borrowedBooks;
+    private List<Book> borrowedBooks = new ArrayList<>();
 
     public Member() {}
 

@@ -64,7 +64,8 @@ public class MemberServiceImpl implements MemberService {
 
     @Override
     public Member returnBookById(Integer memId, Integer bookId) throws RuntimeException {
-        Member borrower = getMemberById(memId);
+        Member borrower = memberRepository.findById(memId)
+                .orElseThrow(()->new MemberNotFoundException("Member not found for id "+memId));
         Book borrowBook = bookService.getBookById(bookId);
 
         if(! borrower.getBorrowedBooks().contains(borrowBook))

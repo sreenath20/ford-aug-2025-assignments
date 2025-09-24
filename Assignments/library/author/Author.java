@@ -4,6 +4,7 @@ import com.demo.library.book.Book;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -18,7 +19,7 @@ public class Author {
 
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "author")
     @JsonIgnore
-    private List<Book> books;
+    private List<Book> books = new ArrayList<>();
 
     public Author() {}
 
