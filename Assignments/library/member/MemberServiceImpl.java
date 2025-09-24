@@ -44,20 +44,21 @@ public class MemberServiceImpl implements MemberService {
 
     @Override
     public Member borrowBookById(Integer memId, Integer bookId) throws RuntimeException {
-        Member borrower = getMemberById(memId);
-        Book borrowBook = bookService.getBookById(bookId);
+        Member borrower = memberRepository.findById(memId)
+                .orElseThrow(()->new MemberNotFoundException("Member not found for id "+memId));
+        Book bookToBeBorrowed = bookService.getBookById(bookId);
 
-        if(borrowBook.getBorrowedByMembers().size() >= 5)
+        if(bookToBeBorrowed.getBorrowedByMembers().size() >= 5)
             throw new BorrowingLimitExceedException("Borrowing limit exceeded, already 5 members borrowed this book.");
 
-        if(borrower.getBorrowedBooks().contains(borrowBook))
+        if(borrower.getBorrowedBooks().contains(bookToBeBorrowed))
             throw  new DuplicateBorrowException("Duplicate book borrowing, member has already been borrowed this book.");
 
         if(borrower.getMembershipCard().getExpiryDate().isBefore(LocalDate.now()))
             throw new ExpiredMembershipException("Membership card has expired .");
 
-        borrowBook.getBorrowedByMembers().add(borrower);
-        borrower.getBorrowedBooks().add(borrowBook);
+        bookToBeBorrowed.getBorrowedByMembers().add(borrower);
+        borrower.getBorrowedBooks().add(bookToBeBorrowed);
 
         return memberRepository.save(borrower);
     }
@@ -66,13 +67,13 @@ public class MemberServiceImpl implements MemberService {
     public Member returnBookById(Integer memId, Integer bookId) throws RuntimeException {
         Member borrower = memberRepository.findById(memId)
                 .orElseThrow(()->new MemberNotFoundException("Member not found for id "+memId));
-        Book borrowBook = bookService.getBookById(bookId);
+        Book borrowedBook = bookService.getBookById(bookId);
 
-        if(! borrower.getBorrowedBooks().contains(borrowBook))
+        if(! borrower.getBorrowedBooks().contains(borrowedBook))
             throw new MemberException("Book not borrowed by member.");
 
-        borrower.getBorrowedBooks().remove(borrowBook);
-        borrowBook.getBorrowedByMembers().remove(borrower);
+        borrower.getBorrowedBooks().remove(borrowedBook);
+        borrowedBook.getBorrowedByMembers().remove(borrower);
 
         return memberRepository.save(borrower);
     }
