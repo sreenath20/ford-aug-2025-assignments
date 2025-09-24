@@ -1,0 +1,161 @@
+
+-- Department Table
+CREATE TABLE Department (
+  DeptID INT PRIMARY KEY,
+  DeptName VARCHAR(50),
+  Location VARCHAR(50)
+);
+INSERT INTO Department VALUES
+(1, 'IT', 'New York'),
+(2, 'HR', 'Chicago'),
+(3, 'Finance', 'Boston');
+
+-- Employee Table
+CREATE TABLE Employee (
+  EmpID INT PRIMARY KEY,
+  EmpName VARCHAR(50),
+  Designation VARCHAR(50),
+  Salary DECIMAL(10,2),
+  DeptID INT,
+  FOREIGN KEY (DeptID) REFERENCES Department(DeptID)
+);
+INSERT INTO Employee VALUES
+(101, 'Alice', 'Manager', 90000, 1),
+(102, 'Bob', 'Developer', 60000, 1),
+(103, 'Charlie', 'Analyst', 55000, 3),
+(104, 'Diana', 'HR Executive', 45000, 2),
+(105, 'Eve', 'Developer', 70000, 1);
+INSERT INTO Employee VALUES (106, 'Franky', 'HR L&D', 43000, 2);
+
+-- Project Table
+CREATE TABLE Project (
+  ProjectID INT PRIMARY KEY,
+  ProjectName VARCHAR(50),
+  DeptID INT,
+  Budget DECIMAL(12,2),
+  FOREIGN KEY (DeptID) REFERENCES Department(DeptID)
+);
+INSERT INTO Project VALUES
+(201, 'ERP System', 1, 2000000),
+(202, 'Payroll System', 3, 1500000),
+(203, 'Recruitment Portal', 2, 800000);
+
+-- WorksOn Table
+CREATE TABLE WorksOn (
+  EmpID INT,
+  ProjectID INT,
+  Hours INT,
+  PRIMARY KEY(EmpID, ProjectID),
+  FOREIGN KEY (EmpID) REFERENCES Employee(EmpID),
+  FOREIGN KEY (ProjectID) REFERENCES Project(ProjectID)
+);
+INSERT INTO WorksOn VALUES
+(101, 201, 20),
+(102, 201, 35),
+(105, 201, 25),
+(103, 202, 40),
+(104, 203, 30),
+(105, 202, 15);
+
+-- 1. List all employees working in the company.
+select * from employee;
+
+-- 2. Display the names and salaries of employees whose salary is greater than 60,000.
+select empname,salary from employee
+where salary > 60000;
+
+-- 3. Show all departments located in “New York”.
+select deptname from department where location = 'New York';
+
+-- 4. Retrieve the names of projects with a budget greater than 1,000,000.
+select projectname from project
+where budget > 1000000;
+
+-- 5. Find employees who work in the “IT” department.
+select * from employee e
+where e.deptid = (select d.deptid from department d where deptname='IT');
+
+-- 6. List employees whose designation is “Manager” and salary is above 80,000.
+select * from employee where designation = 'Manager' and salary > 80000;
+
+-- 7. Display employees who are not assigned to any project.
+select empid,empname from employee
+where empid not in (select empid from workson);
+
+-- 8. Find the average salary of employees in each department.
+select deptid,avg(salary)::numeric(10,2) avgsalary from employee group by deptid;
+
+-- 9 . Display the department with the highest average salary.
+select d.deptname ,avg(e.salary)::numeric(10,2) averagesalary from employee e
+join department d on e.deptid = d.deptid
+group by d.deptname order by averagesalary desc limit 1;
+
+
+-- 10. Count the number of employees in each department.
+select d.deptname,count(distinct e.empid) from employee e
+join department d on e.deptid = d.deptid
+group by d.deptid;
+
+-- 11. Retrieve employee names along with their department names.
+select e.empname,d.deptname from employee e
+join department d on e.deptid = d.deptid;
+
+-- 12. Show project names along with the employees working on them.
+select e.empname,p.projectname from employee e
+join workson w on e.empid = w.empid
+join project p on w.projectid = p.projectid;
+
+-- 13. Find employees working more than 30 hours on any project.
+select e.empname,w.hours from employee e
+join workson w on e.empid = w.empid where w.hours >= 30;
+
+-- 14. List employees working on projects handled by the “Finance” department
+select e.empname,d.deptname,p.projectname from employee e
+join workson w on w.empid = e.empid
+join project p on p.projectid = w.projectid
+join department d on d.deptid = p.deptid
+where d.deptname = 'Finance';
+
+-- 15. Find employees who earn more than the average salary of their department.
+select e1.empname,e1.salary from employee e1
+where salary > (select avg(e2.salary)::numeric(10,2) from employee e2
+                where e1.deptid = e2.deptid );
+
+-- 16. Retrieve employees who work on all projects of their department.
+
+
+17. List employees who do not work on any project
+select e.empname from employee e
+where e.empid not in (select w.empid from workson w);
+
+-- 18. Add a new employee into the Employee table.
+insert into employee values (107,'George','Tester',70000,null);
+select * from employee;
+
+-- 19. Increase the salary of all employees in the “HR” department by 10%
+update employee  set salary = salary*1.1
+where deptid = (select deptid from department
+                where deptname = 'HR');
+select * from employee;
+
+-- 20. Delete all employees who are not assigned to any department.
+delete from employee where deptid is null;
+select * from employee;
+
+-- 21. Find the department that has the maximum number of employees.
+select d.deptname,count(e.empid) empcount from department d
+join employee e on e.deptid = d.deptid
+group by d.deptid order by empcount desc limit 1;
+
+-- 22. List projects where more than 5(2) employees are working.
+select p.projectname,count(w.empid) as empcount from project p
+join workson w on w.projectid = p.projectid
+group by p.projectid having count(w.empid) > 2;
+
+-- 23. Display employees who work on multiple projects.
+select e.empname,count(w.projectid) projcount from employee e
+join workson w on e.empid = w.empid
+group by e.empid having count(w.projectid) > 1;
+
+--  24. Retrieve the top 3 highest-paid employees in the company.
+select empname,salary from employee order by salary desc limit 3;
