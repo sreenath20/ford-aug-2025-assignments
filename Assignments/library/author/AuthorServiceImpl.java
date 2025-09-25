@@ -29,12 +29,16 @@ public class AuthorServiceImpl implements AuthorService {
     }
 
     @Override
-    public Book addBookForAuthor(Integer authId, Book newBook) throws RuntimeException {
+    public Book addBookForAuthor(Integer authId, Book newBook) throws AuthorNotFoundException, BookAlreadyExistsException {
 
         Author foundAuthor = authorRepository.findById(authId)
                 .orElseThrow(() -> new AuthorException("Author with id " + authId + " does not found"));
 
+        if(bookService.checkExistenceOfBook(newBook))
+            throw new BookAlreadyExistsException("Book already exists");
+
         newBook.setAuthor(foundAuthor);
+        
 //        to author
         foundAuthor.getBooks().add(newBook);
         authorRepository.save(foundAuthor);
@@ -43,12 +47,29 @@ public class AuthorServiceImpl implements AuthorService {
     }
 
     @Override
-    public List<Book> getBooksByAuthorId(Integer authId) throws RuntimeException {
+    public List<Book> getBooksByAuthorId(Integer authId) throws AuthorNotFoundException {
         Author foundAuthor = authorRepository.findById(authId)
                 .orElseThrow(() -> new AuthorException("Author with id " + authId + " does not found"));
         if(foundAuthor.getBooks().isEmpty())
             throw new AuthorException("Author with id " + authId + " does not publish any books");
         return foundAuthor.getBooks();
     }
+
+    @Override
+    public Author getAuthorByName(String authName) throws AuthorNotFoundException {
+        Author foundAuthor = authorRepository.findByNameIgnoreCase(authName);
+        if(foundAuthor == null)
+            throw new AuthorNotFoundException("Author with name " + authName + " does not exist");
+        return foundAuthor;
+    }
+
+    @Override
+    public List<Author> getAllAuthors() throws AuthorNotFoundException {
+        List<Author> foundAuthors = authorRepository.findAll();
+        if(foundAuthors.isEmpty())
+            throw new AuthorNotFoundException("No authors found");
+        return foundAuthors;
+    }
+
 
 }
