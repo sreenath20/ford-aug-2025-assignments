@@ -5,6 +5,7 @@ import com.demo.library.member.Member;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
+import java.time.Year;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -18,7 +19,13 @@ public class Book {
     private String title;
 
     @Column(unique = true)
-    private Long isbn;
+    private String isbn;
+
+    private String genre;
+
+    private String language;
+
+    private Year publishYear;
 
     @ManyToOne
     private Author author;
@@ -26,9 +33,10 @@ public class Book {
     @ManyToMany
     @JoinTable(
             name = "BorrowedBooks",
-            joinColumns = @JoinColumn(name = "BooK_Id", referencedColumnName = "id"),
+            joinColumns = @JoinColumn(name = "Book_Id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "Member_Id", referencedColumnName = "id")
     )
+    @JsonIgnore
     private List<Member> borrowedByMembers = new ArrayList<>();
 
     public Book() {}
@@ -49,11 +57,11 @@ public class Book {
         this.title = title;
     }
 
-    public Long getIsbn() {
+    public String getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(Long isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
 
@@ -73,14 +81,38 @@ public class Book {
         this.borrowedByMembers = borrowedByMembers;
     }
 
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
+    public Year getPublishYear() {
+        return publishYear;
+    }
+
+    public void setPublishYear(Year publishedYear) {
+        this.publishYear = publishedYear;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof Book book)) return false;
-        return Objects.equals(isbn, book.isbn);
+        return Objects.equals(id, book.id) && Objects.equals(isbn, book.isbn);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(isbn);
+        return Objects.hash(id, isbn);
     }
 }
