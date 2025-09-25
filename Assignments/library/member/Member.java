@@ -24,7 +24,6 @@ public class Member {
     private MembershipCard membershipCard;
 
     @ManyToMany(mappedBy = "borrowedByMembers")
-    @JsonIgnore
     private List<Book> borrowedBooks = new ArrayList<>();
 
     public Member() {}
