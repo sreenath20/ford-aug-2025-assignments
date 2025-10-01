@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Survey</title>
+    
+</head>
+<body>
+    <form id="onlineSurvey">
+        <h1>Online Survey</h1>
+        
+        <label for="satisfaction">Satisfaction Level :</label>
+        <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="5" oninput="this.nextElementSibling.value = this.value">
+        <output>5</output><br>
+
+        <label for="subscription">Subscription Preference :</label>
+
+        <input type="checkbox" name="subscription" id="newsletters" value="newsletters">
+        <label for="newsletters">NewsLetters</label>
+
+        <input type="checkbox" name="subscription" id="offers">
+        <label for="offers">Offers</label>    
+
+        <input type="checkbox" name="subscription" id="updates" value="updates">
+        <label for="updates">Updates</label><br>
+
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" value="username@example.com"><br>
+
+        <label for="updates">Update Frequency :</label>
+        <select name="frequency" id="frequency">
+            <option value="">--Select--</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+        </select><br>
+
+        <!-- Without JS, not automatically enable the submit button-->
+        <button type="submit" disabled style="cursor:not-allowed;">Submit</button>
+        <button type="reset">Reset</button>
+
+
+    </form>
+
+</body>
+</html>

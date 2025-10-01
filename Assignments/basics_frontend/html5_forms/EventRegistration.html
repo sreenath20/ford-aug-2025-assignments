@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+    <form id="eventRegistration">
+        <h1>Event Registration</h1>
+
+            <label for="dob">Date of Birth :</label>
+            <input type="date" name="dob" id="dob" required><br>
+
+            <label for="age">Age :</label>
+            <input type="range" name="age" id="age" min="18" max="60" readonly required oninput="this.nextElementSibling.value = this.value"> 
+            <output>18</output><br>
+            <label>Preferred Session :</label>
+         
+            <input type="radio" name="session" id="morning" value="Morning" required>
+            <label for="morning">Morning</label>
+            <input type="radio" name="session" id="afternoon" value="Afternoon" required>
+            <label for="afternoon">Afternoon</label>
+            <input type="radio" name="session" id="evening" value="Evening" required>
+            <label for="evening">Evening</label><br>
+ 
+            <label for="foodPref">Food Preference :</label>
+            <select name="foodPreference" id="foodPref" required>
+                <option value="">--Select--</option>
+                <option value="veg">Vegetarian</option>
+                <option value="non-veg">Non-Vegetarian</option>
+                <option value="vegan">Vegan</option>
+            </select> <br>
+ 
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>

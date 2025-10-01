@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Commerce Checkout</title>
+    
+</head>
+<body>
+    <form id="eCommerceCheckout">
+        <h1>
+            E Commerce Checkout
+        </h1>
+
+  
+            <label for="address">Shipping Address :</label>
+            <textarea name="address" id="address" rows="5"  cols="30"></textarea><br>
+  
+            <label for="pincode">PIN Code :</label>
+            <input type="text" name="pincode" id="pincode" pattern="[0-9]{6}" required placeholder="Enter 6 digit PIN code"><br>
+
+            <label for="creditCard">Credit Card No :</label>
+            <input type="text" name="creditCard" id="creditCard" pattern="[0-9]{16}" required placeholder="Enter 16 digit Credit Card No"><br>
+
+            <label for="expDate">Expiry Date :</label>
+            <input type="month" name="expDate" id="expDate" required><br>
+
+            <label for="cvv">CVV :</label>
+            <input type="password" name="cvv" id="cvv" pattern="[0-9]{3}" required placeholder="Enter 3 digit CVV" ><br>
+
+            <button type="submit">Checkout</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+</body>
+</html>
