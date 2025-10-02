@@ -26,12 +26,12 @@ public class WalletServiceImpl implements WalletService{
     @Override
     public Wallet registerNewUserWallet(Wallet newWallet) throws WalletException {
         try {
-            Optional<Wallet> optionalWallet = walletRepository.findById(newWallet.getId());
+            Optional<Wallet> optionalWallet = walletRepository.findByEmailId(newWallet.getEmail());
             if (optionalWallet.isEmpty()) {
                 return this.walletRepository.save(newWallet);
             } else {
                 // Handle the case where wallet already exists
-                throw new WalletException("Wallet with ID " + newWallet.getId() + " already exists");
+                throw new WalletException("Wallet with ID  already exists");
             }}catch(Exception e){
             throw new WalletException(e.getMessage());
         }
@@ -44,18 +44,21 @@ public class WalletServiceImpl implements WalletService{
     public Double addFundsToWalletByEmailId(String EmailId, Double amount) throws WalletException {
         try{
             Optional<Wallet> optionalWallet= walletRepository.findByEmailId(EmailId);
-            Double finalAmout= this.walletRepository.findByEmailId(EmailId).get().getBalance();
-            finalAmout=finalAmout+amount;
-            if(this.walletRepository.findByEmailId(EmailId).isPresent()){
-                
-               optionalWallet.get().setBalance(finalAmout);
-                 this.walletRepository.save(optionalWallet.get());
-                 return finalAmout;
+
+            if(optionalWallet.isPresent()){
+                Wallet wallet=optionalWallet.get();
+                Double currentAmout=wallet.getBalance()+amount;
+
+                wallet.setBalance(currentAmout);
+                walletRepository.save(wallet);
+                 return currentAmout;
+            }else{
+                throw new WalletException("Wallet with ID  not found");
             }
         }catch(Exception e){
             throw new WalletException(e.getMessage());
         }
-        return amount;
+
     }
 
     @Override

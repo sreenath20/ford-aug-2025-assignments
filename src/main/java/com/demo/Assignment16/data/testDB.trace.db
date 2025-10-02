@@ -1,0 +1,9 @@
+2025-09-23 16:43:02.409604+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WALLET" not found (this database is empty); SQL statement:
+select w1_0.id,w1_0.balance,w1_0.email,w1_0.name,w1_0.password from wallet w1_0 where w1_0.id=? [42104-232]
+2025-09-23 16:51:19.912584+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WALLET" not found (this database is empty); SQL statement:
+select w1_0.id,w1_0.balance,w1_0.email,w1_0.name,w1_0.password from wallet w1_0 where w1_0.id=? [42104-232]
+2025-09-23 16:55:10.535159+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WALLET" not found (this database is empty); SQL statement:
+select w1_0.id,w1_0.balance,w1_0.email,w1_0.name,w1_0.password from wallet w1_0 where w1_0.id=? [42104-232]

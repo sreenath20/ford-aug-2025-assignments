@@ -17,18 +17,18 @@ import java.util.List;
 public class WalletController {
 
 
-    private final EmailValidator emailValidator;
+    private WalletRepository walletRepository;
     private WalletService walletService;
 
 
     public void setWalletService(WalletService walletService) {}
     //CRUD OPERATION
     @Autowired
-    public WalletController(WalletService walletService, EmailValidator emailValidator) {
+    public WalletController(WalletService walletService, WalletRepository walletRepository) {
 
 
         this.walletService = walletService;
-        this.emailValidator = emailValidator;
+        this.walletRepository = walletRepository;
     }
     //Create
      @PostMapping("/addanother")

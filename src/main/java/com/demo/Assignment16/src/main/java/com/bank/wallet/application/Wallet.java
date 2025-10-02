@@ -3,6 +3,8 @@ package com.bank.wallet.application;
 import com.bank.wallet.application.Dto.BalanceDto;
 import com.bank.wallet.application.Dto.WalletDto;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
@@ -12,7 +14,6 @@ import lombok.Data;
 @Entity
 public class Wallet {
     @Id
-
     private Integer id;
 
     private String name;
@@ -20,7 +21,7 @@ public class Wallet {
     private String email;
     private String password;
 
-//Default constructor
+
     public Wallet() {
     }
 

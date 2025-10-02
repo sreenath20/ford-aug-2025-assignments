@@ -4,10 +4,11 @@ import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.Optional;
-
+@Repository
 public interface WalletRepository extends JpaRepository<Wallet,Integer> {
 
     @Query("Select wallet from Wallet wallet where wallet.email=?1")
@@ -30,7 +31,5 @@ public interface WalletRepository extends JpaRepository<Wallet,Integer> {
 
     @Query("SELECT wallet FROM Wallet wallet where wallet.balance BETWEEN ?1 AND ?2")
     Collection<Wallet> findWalletBetween(Double fromAmount,Double toAmount);
-
-
 
 }
