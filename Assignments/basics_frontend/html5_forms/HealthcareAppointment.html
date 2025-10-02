@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Appointment</title>
+
+</head>
+<body>
+    <form id="healthcareAppointment">
+        <h1>Healthcare Appointment</h1>
+
+        <label for="patientname">Patient Name :</label>
+        <input type="text" name="patientname" id="patientname"><br>
+
+        <label for="age">Age :</label>
+        <input type="number" name="age" id="age" min="0" max="120"><br>
+
+        <label for="gender">Gender :</label>
+
+        <input type="checkbox" name="male" id="male">
+        <label for="male">Male</label>
+
+        <input type="checkbox" name="female" id="female">
+        <label for="female">Female</label>
+
+        <input type="checkbox" name="others" id="others">
+        <label for="others">Others</label><br>
+
+        <label for="appointmentDate">Appointment Date :</label>
+        <input type="datetime-local" name="appointmentDate" id="appointmentDate"><br>
+
+        <label for="symptoms">Symptoms :</label><br>
+        <textarea name="symptoms" id="symptoms"  cols="25" rows="4"></textarea><br>
+
+        <button type="submit" >Book Appointment</button>
+        <button type="reset">Reset</button>
+
+
+
+    </form>    
+</body>
+</html>
