@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        #eventRegistration {
+            margin: 5% 0 0 0; 
+            width: 500px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        #eventRegistration h1 {
+            text-align: center;
+        }
+
+        #eventRegistration label {
+            display: inline-block;
+            width: 130px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #eventRegistration input[type="date"],
+        #eventRegistration input[type="range"],
+        #eventRegistration select {
+            width: 200px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #eventRegistration button{
+            margin :10px 0 0 20%;
+            padding: 10px 5px;
+            width: 100px;
+            border: 0.8px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #eventRegistration button[type="submit"] {
+            background-color: #63de67;
+            color: white;
+            cursor: pointer;
+        }
+
+        #eventRegistration button[type="submit"]:hover {
+            background-color: #23f02a;
+        }
+
+        #eventRegistration button[type="reset"]:hover {
+            background-color: #ff0000;
+        }
+
+        #eventRegistration button[type="reset"] {
+            background-color: #e64242;
+            color: white;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form id="eventRegistration">
+        <h1>Event Registration</h1>
+
+            <label for="dob">Date of Birth :</label>
+            <input type="date" name="dob" id="dob" required><br>
+
+            <label for="age">Age :</label>
+            <input type="range" name="age" id="age" min="18" max="60" readonly required oninput="this.nextElementSibling.value = this.value"> 
+            <output>18</output><br>
+            <label>Preferred Session :</label><br>
+         
+            <input type="radio" name="session" id="morning" value="Morning" required>
+            <label for="morning" style="width: auto;">Morning</label>
+            <input type="radio" name="session" id="afternoon" value="Afternoon" required>
+            <label for="afternoon" style="width: auto;">Afternoon</label>
+            <input type="radio" name="session" id="evening" value="Evening" required>
+            <label for="evening" style="width: auto;">Evening</label><br>
+
+            <label for="foodPref">Food Preference :</label>
+            <select name="foodPreference" id="foodPref" required>
+                <option value="">--Select--</option>
+                <option value="veg">Vegetarian</option>
+                <option value="non-veg">Non-Vegetarian</option>
+                <option value="vegan">Vegan</option>
+            </select> <br>
+ 
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>

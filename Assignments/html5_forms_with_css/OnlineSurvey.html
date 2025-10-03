@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Survey</title>
+
+    <style>
+          body{
+            display: flex;
+            justify-content: center;
+        }
+        #onlineSurvey {
+            margin: 5% 0 0 0; 
+            width: 500px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        #onlineSurvey h1 {
+            text-align: center;
+        }
+
+        #onlineSurvey label {
+            display: inline-block;
+            width: 130px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #onlineSurvey input[type="date"],
+        #onlineSurvey input[type="email"],
+        #onlineSurvey select {
+            width: 200px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #onlineSurvey button{
+            margin :10px 0 0 20%;
+            padding: 10px 5px;
+            width: 100px;
+            border: 0.8px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #onlineSurvey button[type="submit"] {
+            background-color: #63de67;
+            color: white;
+            cursor: pointer;
+        }
+
+        #onlineSurvey button[type="submit"]:hover {
+            background-color: #23f02a;
+        }
+
+        #onlineSurvey button[type="reset"]:hover {
+            background-color: #ff0000;
+        }
+
+        #onlineSurvey button[type="reset"] {
+            background-color: #e64242;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="onlineSurvey">
+        <h1>Online Survey</h1>
+        
+        <label for="satisfaction">Satisfaction Level :</label>
+        <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="5" oninput="this.nextElementSibling.value = this.value">
+        <output >5</output><br>
+
+        <label for="subscription">Subscription Preference :</label>
+
+        <input type="checkbox" name="subscription" id="newsletters" value="newsletters" >
+        <label for="newsletters" style="width: auto;margin: 2px;padding: 2px;">NewsLetters</label>
+
+        <input type="checkbox" name="subscription" id="offers">
+        <label for="offers" style="width: auto;margin: 2px;padding: 2px;">Offers</label>    
+
+        <input type="checkbox" name="subscription" id="updates" value="updates">
+        <label for="updates" style="width: auto;margin: 2px;padding: 2px;">Updates</label><br>
+
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" value="username@example.com"><br>
+
+        <label for="updates">Update Frequency :</label>
+        <select name="frequency" id="frequency">
+            <option value="">--Select--</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+        </select><br>
+
+        <button type="submit" disabled style="cursor:not-allowed;">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <script>
+    const surveyForm = document.getElementById('onlineSurvey');
+    const submitBtn = surveyForm.querySelector('button[type="submit"]');
+
+    function validateForm() {
+
+        const newsletters = document.getElementById('newsletters').checked;
+        const offers = document.getElementById('offers').checked;
+        const updates = document.getElementById('updates').checked;
+        const email = document.getElementById('email').value;
+        const frequency = document.getElementById('frequency').value;
+
+        const isSubscriptionChecked = newsletters || offers || updates;
+
+        const isEmailFilled = email.trim() !== '';
+
+        const isFrequencySelected = frequency !== '';
+
+        if (isSubscriptionChecked && isEmailFilled && isFrequencySelected) {
+            submitBtn.disabled = false;
+            submitBtn.style.cursor = 'pointer';
+        } else {
+            submitBtn.disabled = true;
+            submitBtn.style.cursor = 'not-allowed';
+        }
+    }
+
+    surveyForm.addEventListener('input', validateForm);
+    validateForm();
+
+</script>
+
+
+</body>
+</html>

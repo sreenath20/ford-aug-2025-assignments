@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Appointment</title>
+
+    <style>
+          body{
+            display: flex;
+            justify-content: center;
+        }
+        #healthcareAppointment {
+            margin: 5% 0 0 0; 
+            width: 500px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        #healthcareAppointment h1 {
+            text-align: center;
+        }
+
+        #healthcareAppointment label {
+            display: inline-block;
+            width: 130px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #healthcareAppointment input[type="datetime-local"],
+        #healthcareAppointment input[type="text"],
+        #healthcareAppointment input[type="number"],
+        textarea,
+        #healthcareAppointment select {
+            width: 200px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #healthcareAppointment button{
+            margin :10px 0 0 20%;
+            padding: 10px 5px;
+            width: 100px;
+            border: 0.8px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #healthcareAppointment button[type="submit"] {
+            background-color: #63de67;
+            color: white;
+            cursor: pointer;
+        }
+
+        #healthcareAppointment button[type="submit"]:hover {
+            background-color: #23f02a;
+        }
+
+        #healthcareAppointment button[type="reset"]:hover {
+            background-color: #ff0000;
+        }
+
+        #healthcareAppointment button[type="reset"] {
+            background-color: #e64242;
+            color: white;
+            cursor: pointer;
+        }
+
+       
+
+    </style>
+
+</head>
+<body>
+    <form id="healthcareAppointment">
+        <h1>Healthcare Appointment</h1>
+
+        <label for="patientname">Patient Name :</label>
+        <input type="text" name="patientname" id="patientname"><br>
+
+        <label for="age">Age :</label>
+        <input type="number" name="age" id="age" min="0" max="120"><br>
+
+        <label for="gender">Gender :</label>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male" style="width: auto;">Male</label>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female" style="width: auto;">Female</label>
+
+        <input type="radio" name="gender" id="others" value="others">
+        <label for="others" style="width: auto;">Others</label><br>
+
+        <label for="appointmentDate">Appointment Date :</label>
+        <input type="datetime-local" name="appointmentDate" id="appointmentDate"><br>
+
+        <label for="symptoms">Symptoms :</label>
+        <textarea name="symptoms" id="symptoms"  cols="25" rows="4"></textarea><br>
+
+        <button type="submit" style="width: auto;padding: 10px 5px;">Book Appointment</button>
+        <button type="reset">Reset</button>
+
+
+    </form>    
+</body>
+</html>
