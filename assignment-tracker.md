@@ -1,6 +1,6 @@
 # 📘 Student Assignment Tracker  
 
-**Student Name:** <Your Full Name>  
+**Student Name:** Abinash K  
 **Batch:** Ford – August 2025  
 
 ---
