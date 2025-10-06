@@ -9,8 +9,8 @@
 
 | Day   | Topic                | Assignment Title                        | Status       | Commit Message Example                                |
 |-------|----------------------|-----------------------------------------|--------------|------------------------------------------------------|
-| Day 02 | Core Java Basics     | Assignment1 – primitive,wrappers        |  Completed    | Added Assignment1 - Java Basics (Day 01)             |
-| Day 02 | OOP Concepts         | Assignment2 – Classes & Objects         |  Completed    | Implemented OOP concepts - Assignment2               |
+| Day 02 | Core Java Basics     | Assignment1 – primitive,wrappers        |  Completed    | Added Assignment1 - "Fix src file"          |
+| Day 03 | OOP Concepts         | Assignment2 – Conditions & Loops       |  Completed    | Added Assignment2  -"Fix src file"         |
 | Day 03 | Collections          | Assignment3 – CRUD with ArrayList       |  Completed    | Completed CRUD using ArrayList - Assignment3         |
 | Day 04 | Exception Handling   | Assignment4 – Custom Exceptions         |  Completed    | Added Assignment4 - Custom Exception Handling        |
 | Day 05 | Streams & Lambdas    | Assignment5 – Employee Stream API       |  Completed    | Added Assignment5 - Stream API example               |
