@@ -1,0 +1,23 @@
+h3{
+    color:red;
+}
+#Email{
+    
+    border: 2px solid blue ;
+}
+#start,#end{
+    border:2px solid green;
+}
+input[type=submit]
+{background-color: blueviolet;
+    color:white;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+input[type=submit]:hover{
+    background-color: rgba(132, 77, 146, 1);
+}
+
+

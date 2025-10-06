@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+</head>
+
+<body>
+    <!-- Assignment 1 -->
+
+    <!-- <h3>Job Application-Basic Form Inputs</h3>
+    <div>
+        <form>
+            <label for="Name">Full Name:</label>
+            <input type="text" id="Name" name="Full Name"  placeholder="xyz"><br><br>
+        
+            <label for="email">Email Id:</label>
+            <input type="Email" id="email" name="Email Id" placeholder="xyz@gmail.com"  title="Enter valid mail" required><br><br>
+            
+            <label for="phone-number">Phone Number:</label>
+            <input type="tel" id="phone-number" pattern="^[89][0-9]{2}-[0-9]{3}-[0-9]{4}$" placeholder="xxx-xxx-xxxx"><br><br>
+        
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" accept=".pdf,.doc,.docx" title="Upload your resume (PDF, DOC, DOCX - Max 2MB)" >
+        
+            <input type="submit" value="submit">
+        </form>
+    </div> -->
+
+
+    <!-- Assignment 2 -->
+
+    <!-- <h3>Event Registration-Using Form Attributes</h3>
+    <div>
+        <form>
+            <label for="age"> Age:</label>
+            <input type="number" id="age" name="age" min="18" max="60" title="Min=18 & Max=60"><br>
+
+            <label for="DOB">D.O.B</label>
+            <input type="date" id="DOB" max="2003-04-09"><br><br>
+
+            <label for="Sessioon">Preferred Session</label>
+            <ul type="none">
+                <li>
+                    <input type="radio" id="mrg" name="Morning" value="Morning">
+                    <label for="mrg">Morning</label>
+                </li>
+                <li>
+                    <input type="radio" id="aft" name="Morning" value="Morning">
+                    <label for="aft">Afternoon</label>
+                </li>
+                <li>
+                    <input type="radio" id="eve" name="Morning" value="Morning">
+                    <label for="eve">Evening</label>
+                </li>
+            </ul>
+
+            <label>Food Preference:</label>
+            <input list="food" placeholder="Select options">
+            <datalist id="food">
+                <option value="Veg"></option>
+                <option value="Non veg"></option>
+            </datalist><br>
+
+            <input type="submit" value="submit">
+
+        </form>
+
+    </div> -->
+
+    <!-- Assignment 3 -->
+
+    <!-- <h3>: E-Commerce Checkout Client-Side Validation</h3>
+    <div>
+        <form validate>
+            <label for="text">Shipping Address</label><br>
+            <textarea id="text" name="address" rows="5" cols="10" placeholder="Type here" ></textarea><br>
+
+            <label for="pincode" >Pincode</label>
+            <input type="number"id="pincode" pattern="^[0-9]{6}" title="follow pattern"><br>
+
+            <label for="card">Credit Card Number: </label>
+            <input type="text" id="card" pattern="^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$"title="Enter the credit card Number"required><br>
+
+            <label for="Expiry date">Expiry Date</label>
+            <input type="month" id="Expiry date"><br>
+            
+            <label for="cvv">CVV</label>
+            <input type="password"  id="cvv" maxlength="3"><br><br>
+        
+            <input type="submit" value="Place order">
+        </form>
+    </div> -->
+
+    <!-- Assignment 4 -->
+
+    <!-- <h3>Online Survey Advanced Form Controls</h3>
+    <div>
+        <form>
+       <label id="range"> Satisfaction (1-10) </label>
+       <input type="range"  id="range" min="0" max="10" step="1" required><br>
+            <label for="sub">Subsription Preference:</label>
+            <ul type="none">
+                <li>
+                    <input type="checkbox" id="letter" value="NewsLetters">
+                    <label for="letter">NewsLetters</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="offers" value="NewsLetters">
+                    <label for="offers">offers</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="updates" value="NewsLetters">
+                    <label for="updates">Updates</label>
+                </li>
+
+            </ul>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="xyz@gmail.com required">
+           
+            <label>preferences</label>
+            <input list="select"required>
+            <datalist id="select" >
+                <option value="Daily"></option>
+                <option value="weekly"></option>
+                <option value="monthly"></option>
+            </datalist>
+            <br><br>
+
+            <input type="submit" value="submit">
+        </form>
+    </div> -->
+
+
+    <!-- Assignment 5 -->
+    <!-- <h3>: Travel Booking - Multi-Step Form</h3>
+    <div>
+
+        <form>
+        <fieldset>
+            <legend>Step 1: Traveler Info</legend>
+            <label for="name">Name</label>
+            <input id="name" type="text"><br>
+
+            <label for="Email">Email</label>
+            <input id="Email" type="email"><br>
+
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" pattern="^[89]+[0-9]+$"><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Step 2: Trip Details</legend>
+            <label for="Destination">Destination</label>
+            <input type="text" id="Destination" list="destinations">
+            <datalist id="destinations">
+                <option value="Goa, India">
+                <option value="Kerala, India">
+                <option value="Rajasthan, India">
+                <option value="Himachal Pradesh, India">
+                <option value="Kashmir, India">
+            </datalist><br>
+
+            <label for="start">Start Date</label>
+            <input type="date" id="start"><br>
+
+            <label for="end" >End Date</label>
+            <input type="date" id="end">
+        </fieldset>
+
+        <fieldset>
+            <legend>Step 3:Payment</legend>
+
+            <label for="card">Card Details</label>
+            <input type="text" id="card" pattern="^[0-9]{4}-[0-9]{4}-[0-9]{4}" required><br><br>
+            
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" pattern="^[0-9]{3}$"required><br>
+
+            <ul type="none">
+                <li><input type="checkbox" required> I agree to terms and conditions</li>
+            </ul>
+        </fieldset>
+
+        <input type="submit" value="submit">
+        </form>
+    </div> -->
+
+
+    <!-- Assignment 6 -->
+    <!-- <div>
+        <h3>Healthcare Appointment - Accessibility & Best Practices</h3>
+
+        <form>
+            <label for="name">Patient Name</label>
+            <input id="name" type="text"><br><br>
+
+            <label for="age">Age</label>
+            <input id="age" type="number"><br><br>
+
+            <label>Gender</label><br>
+            <input id="male" name="gender" type="radio">male</input>
+            <input id="female" name="gender" value="female" type="radio">Female</input>
+            <input id="other" name="gender" type="radio">Others<br><br>
+
+
+            <label for="Appointment">Appointment Date & time</label><br>
+            <input type="datetime-local" id="Appointment"><br>
+
+
+            <label for="Symbtoms">Symbtoms</label><br>
+            <textarea id="Symbtoms" rows="5" cols="20" placeholder="Enter the Symbtoms"></textarea><br>
+
+            <input type="submit" value="submit">
+
+        </form>
+    </div> -->
+</body>
+
+</html>
