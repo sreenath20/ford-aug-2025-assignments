@@ -10,10 +10,10 @@
 | Day   | Topic                | Assignment Title                        | Status       | Commit Message Example                                |
 |-------|----------------------|-----------------------------------------|--------------|------------------------------------------------------|
 | Day 02 | Core Java Basics     | Assignment1 – primitive,wrappers        |  Completed    | Added Assignment1 - "Fix src file"          |
-| Day 03 | OOP Concepts         | Assignment2 – Conditions & Loops       |  Completed    | Added Assignment2  -"Fix src file"         |
-| Day 03 | Collections          | Assignment3 – CRUD with ArrayList       |  Completed    | Completed CRUD using ArrayList - Assignment3         |
-| Day 04 | Exception Handling   | Assignment4 – Custom Exceptions         |  Completed    | Added Assignment4 - Custom Exception Handling        |
-| Day 05 | Streams & Lambdas    | Assignment5 – Employee Stream API       |  Completed    | Added Assignment5 - Stream API example               |
+| Day 03 | Core Java Basics         | Assignment2 – Conditions & Loops       |  Completed    | Added Assignment2  -"Fix src file"         |
+| Day 04 | OOPS Concepts          | Assignment3 – Encapsulation       |  Completed    | Added Assignment3  -"Fix src file"           |
+| Day 05 | OOPS Concepts   | Assignment4 – Abstract & Interface      |  Completed    | Added Assignment4 - "Fix src file"        |
+| Day 06 | OOPs concepts    | Assignment5 – Polymorphism       |  Completed    | Added Assignment5 - "Fix src file"               |
 
 ---
 
