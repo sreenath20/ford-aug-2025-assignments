@@ -35,9 +35,9 @@
 | Day 25 | Spring Boot   | Assignment - To implement Wallet application with Spring Boot Data JPA      |  ✅Completed    | Added Assignment16 - "Fix src file"               |
 | Day 26 | Spring Boot    | Assignment - To implement one to one mapping between User and Cart entity       |  ✅Completed    |Added One_To_One - "Fix src file"               |
 | Day 27 | Spring Boot  | Assignment - To implement one to many mapping between Department and Employee entity     |  ✅Completed    | Added one_To_Many - "Fix src file"               |
+| Day 29 | Spring Boot     | Assignment - To implement Library Management System with muliple mappings and exception handling.       |  ✅Completed    | Added Library |
 | Day 29 | Spring Boot     | Assignment - To implement Library Management System with muliple mappings and exception handling.       |  ✅Completed    | Added Library |  
 
-| Day 30 | Spring Boot  | Assignment - To write test cases to perform integration testing on wallet application.|  ✅Completed| Updated Assignment with testing|  
 
 
 ---
