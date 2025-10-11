@@ -38,7 +38,7 @@
 | Day 29 | Spring Boot     | Assignment - To implement Library Management System with muliple mappings and exception handling.       |  ✅Completed    | Added Library |
 | Day 30 | Spring Boot Testing| Assignment - To write test cases to perform integration testing on wallet application.     |  ✅Completed    | Updated Assignment with testing |  
 | Day 35 | Frontend - Basics| Assignment - To implement simple HTML 5 forms using various inputs with validations    |  ✅Completed    | Implemented HTML - Changed file name|  
-| Day 36 | Frontend - Basics| Assignment - Implement CSS to the previous HTML5 forms assignemtn    |  ✅Completed    | Implemented HTML - Changed file name |  
+| Day 36 | Frontend - Basics| Assignment - Implement CSS to the previous HTML5 forms assignemtn    |  ✅Completed    | Implemented CSS - Changed file name |  
 
 
 
