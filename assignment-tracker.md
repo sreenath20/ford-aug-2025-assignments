@@ -10,9 +10,9 @@
 | Day   | Topic                | Assignment Title                        | Status       | Commit Message Example                                |
 |-------|----------------------|-----------------------------------------|--------------|------------------------------------------------------|
 | Day 02 | Core Java Basics     | Assignment1 – primitive,wrappers        | ✅ Completed    | Added Assignment1 - "Fix src file"          |
-| Day 03 | Core Java Basics         | Assignment2 – Conditions & Loops       |  ✅Completed    | Added Assignment2  -"Fix src file"         |
+| Day 03 | Core Java Basics         | Assignment2 – Conditions & Loops       | ✅Completed    | Added Assignment2  -"Fix src file"         |
 | Day 04 | OOPS Concepts          | Assignment3 – Encapsulation       | ✅ Completed    | Added Assignment3  -"Fix src file"           |
-| Day 05 | OOPS Concepts   | Assignment4 – Abstract & Interface      |  ✅Completed    | Added Assignment4 - "Fix src file"        |
+| Day 05 | OOPS Concepts   | Assignment4 – Abstract & Interface      | ✅Completed    | Added Assignment4 - "Fix src file"        |
 | Day 06 | OOPs concepts    | Assignment5 – Polymorphism       |  ✅Completed    | Added Assignment5 - "Fix src file"               |
 | Day 07 | Advanced Java    |Assignment6.1 – Access Specifiers       |  ✅Completed    | Added Assignment6.1 - "Fix src file"               |
 | Day 07 | Advanced Java    | Assignment6.2 – Exception Handling       |  ✅Completed    | Added Assignment6.2 - "Fix src file"               |
@@ -36,7 +36,9 @@
 | Day 26 | Spring Boot    | Assignment - To implement one to one mapping between User and Cart entity       |  ✅Completed    |Added One_To_One - "Fix src file"               |
 | Day 27 | Spring Boot  | Assignment - To implement one to many mapping between Department and Employee entity     |  ✅Completed    | Added one_To_Many - "Fix src file"               |
 | Day 29 | Spring Boot     | Assignment - To implement Library Management System with muliple mappings and exception handling.       |  ✅Completed    | Added Library |
-| Day 29 | Spring Boot     | Assignment - To implement Library Management System with muliple mappings and exception handling.       |  ✅Completed    | Added Library |  
+| Day 30 | Spring Boot Testing| Assignment - To write test cases to perform integration testing on wallet application.     |  ✅Completed    | Updated Assignment with testing |  
+| Day 35 | Frontend - Basics| Assignment - To implement simple HTML 5 forms using various inputs with validations    |  ✅Completed    | Implemented HTML - Changed file name|  
+| Day 36 | Frontend - Basics| Assignment - Implement CSS to the previous HTML5 forms assignemtn    |  ✅Completed    | Implemented HTML - Changed file name |  
 
 
 
