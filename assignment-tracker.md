@@ -9,11 +9,27 @@
 
 | Day   | Topic                | Assignment Title                        | Status       | Commit Message Example                                |
 |-------|----------------------|-----------------------------------------|--------------|------------------------------------------------------|
-| Day 02 | Core Java Basics     | Assignment1 – primitive,wrappers        |  Completed    | Added Assignment1 - "Fix src file"          |
-| Day 03 | Core Java Basics         | Assignment2 – Conditions & Loops       |  Completed    | Added Assignment2  -"Fix src file"         |
-| Day 04 | OOPS Concepts          | Assignment3 – Encapsulation       |  Completed    | Added Assignment3  -"Fix src file"           |
-| Day 05 | OOPS Concepts   | Assignment4 – Abstract & Interface      |  Completed    | Added Assignment4 - "Fix src file"        |
-| Day 06 | OOPs concepts    | Assignment5 – Polymorphism       |  Completed    | Added Assignment5 - "Fix src file"               |
+| Day 02 | Core Java Basics     | Assignment1 – primitive,wrappers        | ✅ Completed    | Added Assignment1 - "Fix src file"          |
+| Day 03 | Core Java Basics         | Assignment2 – Conditions & Loops       |  ✅Completed    | Added Assignment2  -"Fix src file"         |
+| Day 04 | OOPS Concepts          | Assignment3 – Encapsulation       | ✅ Completed    | Added Assignment3  -"Fix src file"           |
+| Day 05 | OOPS Concepts   | Assignment4 – Abstract & Interface      |  ✅Completed    | Added Assignment4 - "Fix src file"        |
+| Day 06 | OOPs concepts    | Assignment5 – Polymorphism       |  ✅Completed    | Added Assignment5 - "Fix src file"               |
+| Day 07 | Advanced Java    |Assignment6.1 – Access Specifiers       |  ✅Completed    | Added Assignment6.1 - "Fix src file"               |
+| Day 07 | Advanced Java    | Assignment6.2 – Exception Handling       |  ✅Completed    | Added Assignment6.2 - "Fix src file"               |
+| Day 08 | Advanced Java   | Assignment7 – Custom Exceptions      |  ✅Completed    | Added Assignment7 - "Fix src file"               |
+| Day 09 |Advanced Java    | Assignment8 – Collections : List       |  ✅Completed    | Added Assignment8 - "Fix src file"               |
+| Day 10 | Advanced Java    | Assignment9 – Collections : Set, Map       |  ✅Completed    | Added Assignment9 - "Fix src file"               |
+| Day 11 | Advanced Java    | Assignment10 – Lambda Functions, Stream API       |  ✅Completed    | Added Assignment10 - "Fix src file"               |
+| Day 12 | Advanced Java    | Assignment11 – Layered Architecture : wallet demo       |  ✅Completed    | Added Assignment11 - "Fix src file"               |
+| Day 13 |Advanced Java    | To complete pending assignments       |  ✅Completed    |Discussed the layered architecture with wallet demo              |
+| Day 14 | PostgreSQL	   | postgreSql       |  ✅Completed    | Added SQL queries - "Fix src file"               |
+| Day 15 | PostgreSQL    | Discussed the assignment queries and practised joins.       |  ✅Completed    |NA               |
+| Day 16 | JDBC Connection    |Learned to implement JDBC connnection using Connection Driver.      |  ✅Completed    | Created sample tables and practised CRUD operationsfile"               |
+| Day 17 | JDBC Connection   | Assignment - To complete DAO layer of wallet application       |  ✅Completed    |                |
+| Day 18 | Spring Framework| Discussed on Spring features like IoC, DI to achieve loose coupling     |  ✅Completed    | Practiced IoC like XML, Java, Annotaionsrc file"               |
+| Day 19 | Spring Framework    | Assignment - Spring Core,IoC, DI implementation       |  ✅Completed    | Added Assignment13 - "Fix src file"               |
+| Day 20 | Spring Framework    | Spring boot web application, RESTful APIs developement      |  ✅Completed    | Discussed on servlets, HTTP requests, and the MVC architecture, upgrading Standalone Application to Web Application with Layered Architecture              |
+| Day 21 | Spring Framework   | Assignment - To implement RESTfull API controller for Wallet application      |  ✅Completed    | Added Assignment15 - "Fix src file"               |
 
 ---
 
