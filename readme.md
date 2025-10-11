@@ -1,3 +1,7 @@
+FOR REFERENCE:
+        Assignment Location- src/main/java/com/demo
+
+
 IntelliJ Git Workflow – Daily Assignment Submission
 ✅ With this guide, students have a GitHub-styled, step-by-step IntelliJ workflow for daily assignment submission.
 
