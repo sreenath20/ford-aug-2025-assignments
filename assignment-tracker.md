@@ -39,6 +39,7 @@
 | Day 30 |  Spring Boot Testing  |  Assignment - To write test cases to perform integration testing on wallet application.| ✅ Completed  | Test cases in [wallet-integration-tests/WalletIntegrationTests.java](./Assignments/wallet-integration-tests/WalletIntegrationTests.java) and added test reports in [wallet-integration-tests/wallet-test-reports](./Assignments/wallet-integration-tests/wallet-test-reports/) folder. [Wallet Integration Tests Code coverage](https://html-preview.github.io/?url=https://github.com/sreenath20/ford-aug-2025-assignments/blob/raamji/Assignments/wallet-integration-tests/wallet-test-reports/index.html) |
 | Day 35 |  Frontend - Basics  |  Assignment - To implement simple HTML 5 forms using various inputs with validations| ✅ Completed|Implemented in [Assignments/html5_forms](./Assignments/html5_forms/) folder. |
 | Day 36 |  Frontend - Basics  |  Assignment - Increment CSS to the previous HTML5 forms assignemtn| ✅ Completed|Added CSS to the previous HTML5 forms in [Assignments/html5_forms_with_css](./Assignments/html5_forms_with_css/) folder. |
+| Day 38 |  Frontend - Basics  |  Assignment -To perform some CRUD operations on some scenerio based JavaScripts applications| ✅ Completed| Completed CRUD operations on various scenerio based JavaScripts applications|
 ---
 
 **Notes / Challenges :** (Write about problems faced, solutions, clarifications asked, etc.)
