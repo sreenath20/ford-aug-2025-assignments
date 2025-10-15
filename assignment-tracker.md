@@ -54,7 +54,6 @@ Day 04: Tried custom exceptions. Need clarity on throw vs throws.
 
 Day 05: Started with Stream API. Experimented with Comparator.comparing() and .reversed().
 
-
 ---
 
 ## ✅ Daily Submission Checklist  
