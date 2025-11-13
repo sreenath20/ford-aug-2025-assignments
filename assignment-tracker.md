@@ -29,8 +29,8 @@
 | Day 18 | Spring Framework| Discussed on Spring features like IoC, DI to achieve loose coupling     |  ✅Completed    | Practiced IoC like XML, Java, Annotaionsrc file"               |
 | Day 19 | Spring Framework    | Assignment - Spring Core,IoC, DI implementation       |  ✅Completed    | Added Assignment13 - "Fix src file"               |
 | Day 20 | Spring Boot   | Spring boot web application, RESTful APIs developement      |  ✅Completed    | Discussed on servlets, HTTP requests, and the MVC architecture, upgrading Standalone Application to Web Application with Layered Architecture              |
-| Day 21 | Spring Boot   | Assignment - To implement RESTfull API controller for Wallet application      |  ✅Completed    | Added Assignment14 - "Fix src file"               |
-| Day 22 | Spring Boot      | Assignment - To implement REST API controller for Product Management with clear JSON error response      |  ✅Completed    | Added Assignment15 - "Fix src file"               |
+| Day 21 | Spring Boot   | Assignment - To implement RESTfull API controller for Wallet application      |  ✅Completed    | Added Assignment15 - "Fix src file"               |
+| Day 22 | Spring Boot      | Assignment - To implement REST API controller for Product Management with clear JSON error response      |  ✅Completed    | Added Assignment14 - "Fix src file"               |
 | Day 24 | Spring Boot      | Assignment - To implement custom JPA repository methonds on Product Management       |  ✅Completed    | Added Assignment14 updated - "Fix src file"               |
 | Day 25 | Spring Boot   | Assignment - To implement Wallet application with Spring Boot Data JPA      |  ✅Completed    | Added Assignment16 - "Fix src file"               |
 | Day 26 | Spring Boot    | Assignment - To implement one to one mapping between User and Cart entity       |  ✅Completed    |Added One_To_One - "Fix src file"               |
