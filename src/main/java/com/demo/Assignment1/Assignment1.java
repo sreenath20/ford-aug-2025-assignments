@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Assignment1 {
     public static void main(String[] args) {
+
+        // Assignment 1
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the principal amount");
         Double principal_amount=sc.nextDouble();
